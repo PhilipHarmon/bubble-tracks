@@ -415,3 +415,75 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
   .pod-card img { width: 100%; max-width: none; }
   .queue-thumb img { width: 88px; }
 }
+
+/* ---- Expandable player: theater mode + true fullscreen ---- */
+
+/* Stats bar lives inside the player shell so it survives fullscreen. */
+.player-shell .watch-stats {
+  background: #000;
+  margin: 0;
+  padding: 0.55rem 0.8rem;
+}
+.player-shell .watch-stats .muted { color: #d8c6ad; }
+.expand-btn {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: #ffe9d2;
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.expand-btn:hover { border-color: var(--accent); }
+
+/* Theater mode: the big 3/4-screen view. Pure CSS, works everywhere. */
+.theater-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 90;
+}
+.player-shell.theater {
+  position: fixed;
+  z-index: 95;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(1100px, 94vw);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+.player-shell.theater .pop-bubble { font-size: 1rem; }
+
+/* True fullscreen: the whole shell (video + bubbles + counters) fills the screen. */
+.player-shell:fullscreen,
+.player-shell:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.player-shell:fullscreen .yt-frame,
+.player-shell:-webkit-full-screen .yt-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+.player-shell:fullscreen .bubble-zone,
+.player-shell:-webkit-full-screen .bubble-zone {
+  bottom: 60px; /* keep bubbles clear of the stats bar */
+}
+.player-shell:fullscreen .watch-stats,
+.player-shell:-webkit-full-screen .watch-stats {
+  flex: 0 0 auto;
+}
+.player-shell:fullscreen .pop-bubble,
+.player-shell:-webkit-full-screen .pop-bubble {
+  font-size: 1rem;
+}

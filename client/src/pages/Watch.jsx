@@ -26,6 +26,9 @@ function WatchInner({ id }) {
   const [countdown, setCountdown] = useState(null);
 
   const playerRef = useRef(null);
+  const shellRef = useRef(null);
+  const [expandMode, setExpandMode] = useState('normal'); // 'normal' | 'theater' | 'full'
+  const canFullscreen = typeof document !== 'undefined' && !!document.fullscreenEnabled;
   const shownRef = useRef(new Set());
   const lastTimeRef = useRef(0);
   const advanceTimer = useRef(null);
@@ -69,6 +72,46 @@ function WatchInner({ id }) {
       timeSec: p.at * duration,
     }));
   }, [video, duration]);
+
+  // Expand control: normal -> theater (big CSS view) -> true fullscreen
+  // (whole player shell, bubbles and counters included) -> back.
+  const cycleExpand = useCallback(() => {
+    if (expandMode === 'normal') {
+      setExpandMode('theater');
+    } else if (expandMode === 'theater') {
+      if (canFullscreen && shellRef.current && shellRef.current.requestFullscreen) {
+        const p = shellRef.current.requestFullscreen();
+        if (p && typeof p.catch === 'function') p.catch(() => setExpandMode('theater'));
+      } else {
+        setExpandMode('normal');
+      }
+    } else if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    } else {
+      setExpandMode('theater');
+    }
+  }, [expandMode, canFullscreen]);
+
+  // Keep state in sync when the user exits fullscreen with Esc.
+  useEffect(() => {
+    const onFsChange = () => {
+      setExpandMode(document.fullscreenElement ? 'full' : 'theater');
+    };
+    document.addEventListener('fullscreenchange', onFsChange);
+    return () => document.removeEventListener('fullscreenchange', onFsChange);
+  }, []);
+
+  // Esc exits theater mode.
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') setExpandMode('normal');
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  const expandLabel =
+    expandMode === 'full' ? '⛶ Exit' : expandMode === 'theater' ? (canFullscreen ? '⛶ Full screen' : '⛶ Smaller') : '⛶ Expand';
 
   const clearAdvance = useCallback(() => {
     if (advanceTimer.current) {
@@ -191,7 +234,10 @@ function WatchInner({ id }) {
             {video.category ? ` · ${video.category}` : ''}
           </p>
 
-          <div className="player-shell">
+          {expandMode === 'theater' && (
+            <div className="theater-backdrop" onClick={() => setExpandMode('normal')} aria-hidden="true" />
+          )}
+          <div ref={shellRef} className={`player-shell${expandMode === 'theater' ? ' theater' : ''}`}>
             {embedBlocked ? (
               <div className="embed-blocked">
                 <img src={thumbnail(video.youtubeId)} alt="" />
@@ -223,11 +269,20 @@ function WatchInner({ id }) {
                   onError={handlePlayerError}
                 />
                 <BubbleLayer bubbles={visible} onPop={handlePop} onExpire={handleExpire} />
+                {!ended && (
+                  <div className="watch-stats">
+                    <span className="score-pill">🫧 {poppedCount} popped</span>
+                    {total > 0 && <span className="muted small">{total - poppedCount - missed} still to come…</span>}
+                    <button type="button" className="expand-btn" onClick={cycleExpand} title={expandLabel}>
+                      {expandLabel}
+                    </button>
+                  </div>
+                )}
               </>
             )}
           </div>
 
-          {ended ? (
+          {ended && (
             <section className="panel scorecard" onClick={clearAdvance}>
               <h2>🫧 That's a wrap!</h2>
               <p className="score-line">
@@ -249,11 +304,6 @@ function WatchInner({ id }) {
                 )}
               </div>
             </section>
-          ) : (
-            <div className="watch-stats">
-              <span className="score-pill">🫧 {poppedCount} popped</span>
-              {total > 0 && <span className="muted small">{total - poppedCount - missed} still to come…</span>}
-            </div>
           )}
 
           {video.description && <p className="muted">{video.description}</p>}

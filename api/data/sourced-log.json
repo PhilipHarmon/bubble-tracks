@@ -82,5 +82,40 @@
   "batch": "batch-1",
   "date": "2026-10-07",
   "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Money for Nothing",
+  "artist": "Dire Straits",
+  "batch": "batch-2",
+  "date": "2026-10-12",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Sledgehammer",
+  "artist": "Peter Gabriel",
+  "batch": "batch-2",
+  "date": "2026-10-12",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "In the Air Tonight",
+  "artist": "Phil Collins",
+  "batch": "batch-2",
+  "date": "2026-10-12",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "I Wanna Dance with Somebody",
+  "artist": "Whitney Houston",
+  "batch": "batch-2",
+  "date": "2026-10-12",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Don't You (Forget About Me)",
+  "artist": "Simple Minds",
+  "batch": "batch-2",
+  "date": "2026-10-12",
+  "source": "All Out 80s playlist"
  }
 ]

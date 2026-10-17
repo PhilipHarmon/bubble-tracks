@@ -35,7 +35,7 @@ export default function YouTubePlayer({ videoId, playerRef, onReady, onStateChan
         videoId,
         width: '100%',
         height: '100%',
-        playerVars: { rel: 0, modestbranding: 1 },
+        playerVars: { rel: 0, modestbranding: 1, fs: 0 },
         events: {
           onReady: (e) => cbRef.current.onReady && cbRef.current.onReady(e),
           onStateChange: (e) => cbRef.current.onStateChange && cbRef.current.onStateChange(e),
