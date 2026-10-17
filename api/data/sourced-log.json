@@ -1,0 +1,86 @@
+[
+ {
+  "artist": "a-ha",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Take On Me"
+ },
+ {
+  "artist": "Michael Jackson",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Thriller"
+ },
+ {
+  "artist": "Cyndi Lauper",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Girls Just Want to Have Fun"
+ },
+ {
+  "artist": "Wham!",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Wake Me Up Before You Go-Go"
+ },
+ {
+  "artist": "Shakira",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Try Everything"
+ },
+ {
+  "artist": "Jimmy Buffett",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Margaritaville"
+ },
+ {
+  "artist": "Queen",
+  "batch": "launch",
+  "date": "2026-10-07",
+  "source": "manual pick",
+  "title": "Bohemian Rhapsody"
+ },
+ {
+  "title": "Billie Jean",
+  "artist": "Michael Jackson",
+  "batch": "batch-1",
+  "date": "2026-10-07",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Like a Prayer",
+  "artist": "Madonna",
+  "batch": "batch-1",
+  "date": "2026-10-07",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Livin' on a Prayer",
+  "artist": "Bon Jovi",
+  "batch": "batch-1",
+  "date": "2026-10-07",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Total Eclipse of the Heart",
+  "artist": "Bonnie Tyler",
+  "batch": "batch-1",
+  "date": "2026-10-07",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Born in the U.S.A.",
+  "artist": "Bruce Springsteen",
+  "batch": "batch-1",
+  "date": "2026-10-07",
+  "source": "All Out 80s playlist"
+ }
+]
