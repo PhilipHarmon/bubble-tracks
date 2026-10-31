@@ -117,5 +117,831 @@
   "batch": "batch-2",
   "date": "2026-10-12",
   "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Love Story",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "You Belong with Me",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Shake It Off",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Blank Space",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Bad Blood",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Look What You Made Me Do",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Delicate",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "ME!",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "You Need to Calm Down",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "The Man",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "cardigan",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Anti-Hero",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "willow",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "All Too Well (10 Minute Version)",
+  "artist": "Taylor Swift",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Down with Disease",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Sample in a Jar",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Bouncing Around the Room",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Chalk Dust Torture",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Free",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Character Zero",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Waste",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Farmhouse",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Heavy Things",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "555",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "Blaze On",
+  "artist": "Phish",
+  "batch": "sprint-1",
+  "date": "2026-10-17",
+  "source": "Saturday song sprint"
+ },
+ {
+  "title": "We Are Never Ever Getting Back Together",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "I Knew You Were Trouble",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "22",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Style",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Wildest Dreams",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Out of the Woods",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "...Ready For It?",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "End Game",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Lover",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Bejeweled",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Lavender Haze",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Fortnight",
+  "artist": "Taylor Swift",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Wilson",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Tweezer",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Run Like an Antelope",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "The Lizards",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Maze",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Stash",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Fee",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Harry Hood",
+  "artist": "Phish",
+  "batch": "sprint-2",
+  "date": "2026-10-18",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Our Song",
+  "artist": "Taylor Swift",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Mine",
+  "artist": "Taylor Swift",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Mean",
+  "artist": "Taylor Swift",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Back to December",
+  "artist": "Taylor Swift",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Karma",
+  "artist": "Taylor Swift",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "I Can Do It With a Broken Heart",
+  "artist": "Taylor Swift",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Beat It",
+  "artist": "Michael Jackson",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Africa",
+  "artist": "Toto",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Free Fallin'",
+  "artist": "Tom Petty",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "We Don't Talk About Bruno",
+  "artist": "Encanto Cast",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "Spotify search — Disney/Encanto"
+ },
+ {
+  "title": "Can't Stop the Feeling!",
+  "artist": "Justin Timberlake",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "Spotify search — Trolls"
+ },
+ {
+  "title": "Julius",
+  "artist": "Phish",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Bathtub Gin",
+  "artist": "Phish",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Ghost",
+  "artist": "Phish",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Birds of a Feather",
+  "artist": "Phish",
+  "batch": "batch-3",
+  "date": "2026-10-19",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Teardrops on My Guitar",
+  "artist": "Taylor Swift",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Tim McGraw",
+  "artist": "Taylor Swift",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Fearless",
+  "artist": "Taylor Swift",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Fifteen",
+  "artist": "Taylor Swift",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Begin Again",
+  "artist": "Taylor Swift",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "Cruel Summer",
+  "artist": "Taylor Swift",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "This Is Taylor Swift playlist (Spotify)"
+ },
+ {
+  "title": "If I Could",
+  "artist": "Phish",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Everything's Right",
+  "artist": "Phish",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "The Divided Sky",
+  "artist": "Phish",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Punch You in the Eye",
+  "artist": "Phish",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "Spotify search — Phish"
+ },
+ {
+  "title": "Dance Mode",
+  "artist": "Bluey",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "Spotify search — Bluey"
+ },
+ {
+  "title": "Eyes Without a Face",
+  "artist": "Billy Idol",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Just Like Heaven",
+  "artist": "The Cure",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "Kiss",
+  "artist": "Prince",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "All Out 80s playlist"
+ },
+ {
+  "title": "1979",
+  "artist": "The Smashing Pumpkins",
+  "batch": "batch-4",
+  "date": "2026-10-26",
+  "source": "Scully's Mix playlist"
+ },
+ {
+  "artist": "Miles Davis",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "So What"
+ },
+ {
+  "artist": "Miles Davis",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Freddie Freeloader"
+ },
+ {
+  "artist": "The Dave Brubeck Quartet",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Take Five"
+ },
+ {
+  "artist": "The Dave Brubeck Quartet",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Blue Rondo à la Turk"
+ },
+ {
+  "artist": "Thelonious Monk",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "'Round Midnight"
+ },
+ {
+  "artist": "Thelonious Monk",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Straight, No Chaser"
+ },
+ {
+  "artist": "Stan Getz",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "The Girl from Ipanema"
+ },
+ {
+  "artist": "Stan Getz & Charlie Byrd",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Desafinado"
+ },
+ {
+  "artist": "Norah Jones",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Don't Know Why"
+ },
+ {
+  "artist": "Norah Jones",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Come Away with Me"
+ },
+ {
+  "artist": "Diana Krall",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "The Look of Love"
+ },
+ {
+  "artist": "Diana Krall",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "'Deed I Do"
+ },
+ {
+  "artist": "Marvin Gaye",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "What's Going On"
+ },
+ {
+  "artist": "Stevie Wonder",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Superstition"
+ },
+ {
+  "artist": "The Temptations",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "My Girl"
+ },
+ {
+  "artist": "The Jackson 5",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "I Want You Back"
+ },
+ {
+  "artist": "Bob Marley & The Wailers",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Three Little Birds"
+ },
+ {
+  "artist": "Bob Marley & The Wailers",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "No Woman, No Cry"
+ },
+ {
+  "artist": "Jimmy Cliff",
+  "batch": "batch-5a",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "I Can See Clearly Now"
+ },
+ {
+  "artist": "Pearl Jam",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Alive"
+ },
+ {
+  "artist": "Pearl Jam",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Jeremy"
+ },
+ {
+  "artist": "The Smashing Pumpkins",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Tonight, Tonight"
+ },
+ {
+  "artist": "The Smashing Pumpkins",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Today"
+ },
+ {
+  "artist": "Primus",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "My Name Is Mud"
+ },
+ {
+  "artist": "Primus",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Jerry Was a Race Car Driver"
+ },
+ {
+  "artist": "Red Hot Chili Peppers",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Under the Bridge"
+ },
+ {
+  "artist": "Red Hot Chili Peppers",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Californication"
+ },
+ {
+  "artist": "Grateful Dead",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Touch of Grey"
+ },
+ {
+  "artist": "Grateful Dead",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Hell in a Bucket"
+ },
+ {
+  "artist": "The Rolling Stones",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Paint It, Black"
+ },
+ {
+  "artist": "The Rolling Stones",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Start Me Up"
+ },
+ {
+  "artist": "R.E.M.",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Losing My Religion"
+ },
+ {
+  "artist": "R.E.M.",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Everybody Hurts"
+ },
+ {
+  "artist": "The Beatles",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Come Together"
+ },
+ {
+  "artist": "The Beatles",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Here Comes the Sun"
+ },
+ {
+  "artist": "Dire Straits",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Sultans of Swing"
+ },
+ {
+  "artist": "Dire Straits",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Walk of Life"
+ },
+ {
+  "artist": "Blues Traveler",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Run-Around"
+ },
+ {
+  "artist": "Blues Traveler",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Hook"
+ },
+ {
+  "artist": "My Morning Jacket",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "One Big Holiday"
+ },
+ {
+  "artist": "Widespread Panic",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Ain't Life Grand"
+ },
+ {
+  "artist": "The Connells",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "'74-'75"
+ },
+ {
+  "artist": "The Connells",
+  "batch": "batch-5b",
+  "date": "2026-10-29",
+  "source": "Philip late-night sprint request",
+  "title": "Stone Cold Yesterday"
  }
 ]
