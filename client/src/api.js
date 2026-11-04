@@ -32,6 +32,29 @@ export const api = {
   deleteVideo: (id) => write(`/videos/${id}`, 'DELETE'),
 };
 
+// --- TV share rooms -------------------------------------------------------
+// Create is public; writes after that need the one-time host token the API
+// returned at creation (sent as x-host-token, never the admin key).
+async function tvWrite(path, method, body, hostToken) {
+  const headers = { 'Content-Type': 'application/json' };
+  if (hostToken) headers['x-host-token'] = hostToken;
+  const res = await fetch(`${BASE_URL}${path}`, {
+    method,
+    headers,
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || `Request failed: ${res.status}`);
+  return data;
+}
+
+export const tvApi = {
+  create: (videoId) => tvWrite('/tv', 'POST', videoId ? { video: videoId } : {}),
+  room: (code) => get(`/tv/${encodeURIComponent(code)}`),
+  update: (code, hostToken, body) => tvWrite(`/tv/${encodeURIComponent(code)}`, 'PUT', body, hostToken),
+  end: (code, hostToken) => tvWrite(`/tv/${encodeURIComponent(code)}`, 'DELETE', null, hostToken),
+};
+
 export function setAdminKey(key) {
   if (key) localStorage.setItem('bt_admin_key', key);
   else localStorage.removeItem('bt_admin_key');

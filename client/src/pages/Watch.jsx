@@ -1,12 +1,32 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
-import { api, thumbnail } from '../api.js';
+import { api, thumbnail, tvApi } from '../api.js';
 import { useQueue } from '../queue.jsx';
 import YouTubePlayer from '../components/YouTubePlayer.jsx';
 import BubbleLayer from '../components/BubbleLayer.jsx';
 import VideoCard from '../components/VideoCard.jsx';
+import TvShareModal from '../components/TvShareModal.jsx';
 
 const AUTOPLAY_NEXT_SECONDS = 8;
+
+// The TV room survives moving between videos (queue/shuffle/auto-advance)
+// because the host session, not the video, owns it.
+const TV_KEY = 'bt_tv_room';
+function loadTvRoom() {
+  try {
+    return JSON.parse(sessionStorage.getItem(TV_KEY) || 'null');
+  } catch {
+    return null;
+  }
+}
+function saveTvRoom(room) {
+  try {
+    if (room) sessionStorage.setItem(TV_KEY, JSON.stringify(room));
+    else sessionStorage.removeItem(TV_KEY);
+  } catch {
+    /* ignore */
+  }
+}
 
 export default function Watch() {
   const { id } = useParams();
@@ -37,6 +57,28 @@ function WatchInner({ id }) {
   const { queue, dequeue } = useQueue();
   const shuffleMode = !!(location.state && location.state.shuffle);
 
+  // --- TV share (host) ------------------------------------------------------
+  const [tvRoom, setTvRoom] = useState(loadTvRoom);
+  const [tvModal, setTvModal] = useState(false);
+  const [tvBusy, setTvBusy] = useState(false);
+  const [tvError, setTvError] = useState(false);
+  const tvRef = useRef(null);
+  tvRef.current = tvRoom;
+  const lastTvPublishRef = useRef(0);
+
+  const publishTv = useCallback(
+    (patch) => {
+      const room = tvRef.current;
+      if (!room || !video) return;
+      tvApi
+        .update(room.code, room.hostToken, { video: video.id, ...patch })
+        .catch(() => {
+          /* a missed publish self-heals on the next tick */
+        });
+    },
+    [video],
+  );
+
   // Load video + up-next suggestions.
   useEffect(() => {
     let cancelled = false;
@@ -48,6 +90,19 @@ function WatchInner({ id }) {
       .then((v) => {
         if (cancelled) return;
         setVideo(v);
+        // If a TV share is live, the new video takes over the room
+        // (queue picks, shuffle and auto-advance all flow through here).
+        const room = tvRef.current;
+        if (room) {
+          tvApi
+            .update(room.code, room.hostToken, {
+              video: v.id,
+              status: 'playing',
+              currentTime: 0,
+              duration: 0,
+            })
+            .catch(() => {});
+        }
         api.videos().then((all) => {
           if (cancelled) return;
           const others = all.filter((x) => x.id !== v.id);
@@ -178,6 +233,37 @@ function WatchInner({ id }) {
             if (due.length) setVisible((prev) => [...prev, ...due].slice(-3));
           }
           lastTimeRef.current = t;
+          // TV share: throttled position publish (~every 2s) from the
+          // same RAF tick — no extra timers.
+          const room = tvRef.current;
+          if (room && video) {
+            const now = Date.now();
+            if (now - lastTvPublishRef.current > 2000) {
+              lastTvPublishRef.current = now;
+              let status;
+              try {
+                const st = player.getPlayerState ? player.getPlayerState() : -1;
+                if (st === 1) status = 'playing';
+                else if (st === 2) status = 'paused';
+              } catch {
+                /* ignore */
+              }
+              let dur = 0;
+              try {
+                dur = player.getDuration ? player.getDuration() || 0 : 0;
+              } catch {
+                /* ignore */
+              }
+              tvApi
+                .update(room.code, room.hostToken, {
+                  video: video.id,
+                  currentTime: t,
+                  duration: dur,
+                  ...(status ? { status } : {}),
+                })
+                .catch(() => {});
+            }
+          }
         }
       } catch {
         /* player not ready */
@@ -186,7 +272,7 @@ function WatchInner({ id }) {
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [pops]);
+  }, [pops, video]);
 
   // Countdown display ticker.
   useEffect(() => {
@@ -216,6 +302,37 @@ function WatchInner({ id }) {
     if (e && (e.data === 101 || e.data === 150)) setEmbedBlocked(true);
   }
 
+  async function openTv() {
+    setTvError(false);
+    setTvModal(true);
+    if (tvRef.current) return;
+    setTvBusy(true);
+    try {
+      const room = await tvApi.create(video ? video.id : null);
+      const stored = { code: room.code, hostToken: room.hostToken };
+      saveTvRoom(stored);
+      setTvRoom(stored);
+    } catch {
+      setTvError(true);
+    } finally {
+      setTvBusy(false);
+    }
+  }
+
+  async function endTv() {
+    const room = tvRef.current;
+    if (room) {
+      try {
+        await tvApi.end(room.code, room.hostToken);
+      } catch {
+        /* room may already be gone — ending locally either way */
+      }
+    }
+    saveTvRoom(null);
+    setTvRoom(null);
+    setTvModal(false);
+  }
+
   const total = pops.length;
   const poppedCount = poppedFacts.length;
 
@@ -233,6 +350,17 @@ function WatchInner({ id }) {
             {video.year ? ` · ${video.year}` : ''}
             {video.category ? ` · ${video.category}` : ''}
           </p>
+
+          <div className="watch-actions">
+            <button type="button" className="btn btn-ghost btn-sm" onClick={openTv}>
+              📺 Show on TV
+            </button>
+            {tvRoom && (
+              <button type="button" className="tv-live-pill" onClick={() => setTvModal(true)}>
+                📺 On TV: {tvRoom.code} — tap to manage
+              </button>
+            )}
+          </div>
 
           {expandMode === 'theater' && (
             <div className="theater-backdrop" onClick={() => setExpandMode('normal')} aria-hidden="true" />
@@ -264,7 +392,17 @@ function WatchInner({ id }) {
                     }
                   }}
                   onStateChange={(e) => {
-                    if (window.YT && e.data === window.YT.PlayerState.ENDED) handleEnded();
+                    if (!window.YT) return;
+                    if (e.data === window.YT.PlayerState.ENDED) {
+                      // Keep the room 'paused' at the end frame rather than
+                      // 'ended' — auto-advance publishes the next video next.
+                      publishTv({ status: 'paused' });
+                      handleEnded();
+                    } else if (e.data === window.YT.PlayerState.PLAYING) {
+                      publishTv({ status: 'playing' });
+                    } else if (e.data === window.YT.PlayerState.PAUSED) {
+                      publishTv({ status: 'paused' });
+                    }
                   }}
                   onError={handlePlayerError}
                 />
@@ -317,6 +455,17 @@ function WatchInner({ id }) {
                 ))}
               </div>
             </section>
+          )}
+
+          {tvModal && (
+            <TvShareModal
+              room={tvRoom}
+              url={tvRoom ? `${window.location.origin}/?tv=${tvRoom.code}` : ''}
+              error={tvError}
+              busy={tvBusy}
+              onClose={() => setTvModal(false)}
+              onEnd={endTv}
+            />
           )}
         </>
       )}

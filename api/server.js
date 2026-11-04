@@ -5,6 +5,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const { seedIfEmpty } = require('./lib/seed');
 const videoRoutes = require('./routes/videos');
+const tvRoutes = require('./routes/tv');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -21,6 +22,7 @@ app.use(express.json());
 
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 app.use('/api', videoRoutes);
+app.use('/api', tvRoutes);
 
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Not found' }));
 

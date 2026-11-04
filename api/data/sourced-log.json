@@ -1,947 +1,3502 @@
 [
- {
-  "artist": "a-ha",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Take On Me"
- },
- {
-  "artist": "Michael Jackson",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Thriller"
- },
- {
-  "artist": "Cyndi Lauper",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Girls Just Want to Have Fun"
- },
- {
-  "artist": "Wham!",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Wake Me Up Before You Go-Go"
- },
- {
-  "artist": "Shakira",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Try Everything"
- },
- {
-  "artist": "Jimmy Buffett",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Margaritaville"
- },
- {
-  "artist": "Queen",
-  "batch": "launch",
-  "date": "2026-10-07",
-  "source": "manual pick",
-  "title": "Bohemian Rhapsody"
- },
- {
-  "title": "Billie Jean",
-  "artist": "Michael Jackson",
-  "batch": "batch-1",
-  "date": "2026-10-07",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Like a Prayer",
-  "artist": "Madonna",
-  "batch": "batch-1",
-  "date": "2026-10-07",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Livin' on a Prayer",
-  "artist": "Bon Jovi",
-  "batch": "batch-1",
-  "date": "2026-10-07",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Total Eclipse of the Heart",
-  "artist": "Bonnie Tyler",
-  "batch": "batch-1",
-  "date": "2026-10-07",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Born in the U.S.A.",
-  "artist": "Bruce Springsteen",
-  "batch": "batch-1",
-  "date": "2026-10-07",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Money for Nothing",
-  "artist": "Dire Straits",
-  "batch": "batch-2",
-  "date": "2026-10-12",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Sledgehammer",
-  "artist": "Peter Gabriel",
-  "batch": "batch-2",
-  "date": "2026-10-12",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "In the Air Tonight",
-  "artist": "Phil Collins",
-  "batch": "batch-2",
-  "date": "2026-10-12",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "I Wanna Dance with Somebody",
-  "artist": "Whitney Houston",
-  "batch": "batch-2",
-  "date": "2026-10-12",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Don't You (Forget About Me)",
-  "artist": "Simple Minds",
-  "batch": "batch-2",
-  "date": "2026-10-12",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Love Story",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "You Belong with Me",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Shake It Off",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Blank Space",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Bad Blood",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Look What You Made Me Do",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Delicate",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "ME!",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "You Need to Calm Down",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "The Man",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "cardigan",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Anti-Hero",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "willow",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "All Too Well (10 Minute Version)",
-  "artist": "Taylor Swift",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Down with Disease",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Sample in a Jar",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Bouncing Around the Room",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Chalk Dust Torture",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Free",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Character Zero",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Waste",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Farmhouse",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Heavy Things",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "555",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "Blaze On",
-  "artist": "Phish",
-  "batch": "sprint-1",
-  "date": "2026-10-17",
-  "source": "Saturday song sprint"
- },
- {
-  "title": "We Are Never Ever Getting Back Together",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "I Knew You Were Trouble",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "22",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Style",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Wildest Dreams",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Out of the Woods",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "...Ready For It?",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "End Game",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Lover",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Bejeweled",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Lavender Haze",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Fortnight",
-  "artist": "Taylor Swift",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Wilson",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Tweezer",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Run Like an Antelope",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "The Lizards",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Maze",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Stash",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Fee",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Harry Hood",
-  "artist": "Phish",
-  "batch": "sprint-2",
-  "date": "2026-10-18",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Our Song",
-  "artist": "Taylor Swift",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Mine",
-  "artist": "Taylor Swift",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Mean",
-  "artist": "Taylor Swift",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Back to December",
-  "artist": "Taylor Swift",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Karma",
-  "artist": "Taylor Swift",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "I Can Do It With a Broken Heart",
-  "artist": "Taylor Swift",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Beat It",
-  "artist": "Michael Jackson",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Africa",
-  "artist": "Toto",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Free Fallin'",
-  "artist": "Tom Petty",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "We Don't Talk About Bruno",
-  "artist": "Encanto Cast",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "Spotify search — Disney/Encanto"
- },
- {
-  "title": "Can't Stop the Feeling!",
-  "artist": "Justin Timberlake",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "Spotify search — Trolls"
- },
- {
-  "title": "Julius",
-  "artist": "Phish",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Bathtub Gin",
-  "artist": "Phish",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Ghost",
-  "artist": "Phish",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Birds of a Feather",
-  "artist": "Phish",
-  "batch": "batch-3",
-  "date": "2026-10-19",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Teardrops on My Guitar",
-  "artist": "Taylor Swift",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Tim McGraw",
-  "artist": "Taylor Swift",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Fearless",
-  "artist": "Taylor Swift",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Fifteen",
-  "artist": "Taylor Swift",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Begin Again",
-  "artist": "Taylor Swift",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "Cruel Summer",
-  "artist": "Taylor Swift",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "This Is Taylor Swift playlist (Spotify)"
- },
- {
-  "title": "If I Could",
-  "artist": "Phish",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Everything's Right",
-  "artist": "Phish",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "The Divided Sky",
-  "artist": "Phish",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Punch You in the Eye",
-  "artist": "Phish",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "Spotify search — Phish"
- },
- {
-  "title": "Dance Mode",
-  "artist": "Bluey",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "Spotify search — Bluey"
- },
- {
-  "title": "Eyes Without a Face",
-  "artist": "Billy Idol",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Just Like Heaven",
-  "artist": "The Cure",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "Kiss",
-  "artist": "Prince",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "All Out 80s playlist"
- },
- {
-  "title": "1979",
-  "artist": "The Smashing Pumpkins",
-  "batch": "batch-4",
-  "date": "2026-10-26",
-  "source": "Scully's Mix playlist"
- },
- {
-  "artist": "Miles Davis",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "So What"
- },
- {
-  "artist": "Miles Davis",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Freddie Freeloader"
- },
- {
-  "artist": "The Dave Brubeck Quartet",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Take Five"
- },
- {
-  "artist": "The Dave Brubeck Quartet",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Blue Rondo à la Turk"
- },
- {
-  "artist": "Thelonious Monk",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "'Round Midnight"
- },
- {
-  "artist": "Thelonious Monk",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Straight, No Chaser"
- },
- {
-  "artist": "Stan Getz",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "The Girl from Ipanema"
- },
- {
-  "artist": "Stan Getz & Charlie Byrd",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Desafinado"
- },
- {
-  "artist": "Norah Jones",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Don't Know Why"
- },
- {
-  "artist": "Norah Jones",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Come Away with Me"
- },
- {
-  "artist": "Diana Krall",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "The Look of Love"
- },
- {
-  "artist": "Diana Krall",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "'Deed I Do"
- },
- {
-  "artist": "Marvin Gaye",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "What's Going On"
- },
- {
-  "artist": "Stevie Wonder",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Superstition"
- },
- {
-  "artist": "The Temptations",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "My Girl"
- },
- {
-  "artist": "The Jackson 5",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "I Want You Back"
- },
- {
-  "artist": "Bob Marley & The Wailers",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Three Little Birds"
- },
- {
-  "artist": "Bob Marley & The Wailers",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "No Woman, No Cry"
- },
- {
-  "artist": "Jimmy Cliff",
-  "batch": "batch-5a",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "I Can See Clearly Now"
- },
- {
-  "artist": "Pearl Jam",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Alive"
- },
- {
-  "artist": "Pearl Jam",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Jeremy"
- },
- {
-  "artist": "The Smashing Pumpkins",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Tonight, Tonight"
- },
- {
-  "artist": "The Smashing Pumpkins",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Today"
- },
- {
-  "artist": "Primus",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "My Name Is Mud"
- },
- {
-  "artist": "Primus",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Jerry Was a Race Car Driver"
- },
- {
-  "artist": "Red Hot Chili Peppers",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Under the Bridge"
- },
- {
-  "artist": "Red Hot Chili Peppers",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Californication"
- },
- {
-  "artist": "Grateful Dead",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Touch of Grey"
- },
- {
-  "artist": "Grateful Dead",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Hell in a Bucket"
- },
- {
-  "artist": "The Rolling Stones",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Paint It, Black"
- },
- {
-  "artist": "The Rolling Stones",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Start Me Up"
- },
- {
-  "artist": "R.E.M.",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Losing My Religion"
- },
- {
-  "artist": "R.E.M.",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Everybody Hurts"
- },
- {
-  "artist": "The Beatles",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Come Together"
- },
- {
-  "artist": "The Beatles",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Here Comes the Sun"
- },
- {
-  "artist": "Dire Straits",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Sultans of Swing"
- },
- {
-  "artist": "Dire Straits",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Walk of Life"
- },
- {
-  "artist": "Blues Traveler",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Run-Around"
- },
- {
-  "artist": "Blues Traveler",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Hook"
- },
- {
-  "artist": "My Morning Jacket",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "One Big Holiday"
- },
- {
-  "artist": "Widespread Panic",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Ain't Life Grand"
- },
- {
-  "artist": "The Connells",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "'74-'75"
- },
- {
-  "artist": "The Connells",
-  "batch": "batch-5b",
-  "date": "2026-10-29",
-  "source": "Philip late-night sprint request",
-  "title": "Stone Cold Yesterday"
- }
+  {
+    "artist": "a-ha",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Take On Me"
+  },
+  {
+    "artist": "Michael Jackson",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Thriller"
+  },
+  {
+    "artist": "Cyndi Lauper",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Girls Just Want to Have Fun"
+  },
+  {
+    "artist": "Wham!",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Wake Me Up Before You Go-Go"
+  },
+  {
+    "artist": "Shakira",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Try Everything"
+  },
+  {
+    "artist": "Jimmy Buffett",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Margaritaville"
+  },
+  {
+    "artist": "Queen",
+    "batch": "launch",
+    "date": "2026-10-07",
+    "source": "manual pick",
+    "title": "Bohemian Rhapsody"
+  },
+  {
+    "artist": "Michael Jackson",
+    "batch": "batch-1",
+    "date": "2026-10-07",
+    "source": "All Out 80s playlist",
+    "title": "Billie Jean"
+  },
+  {
+    "artist": "Madonna",
+    "batch": "batch-1",
+    "date": "2026-10-07",
+    "source": "All Out 80s playlist",
+    "title": "Like a Prayer"
+  },
+  {
+    "artist": "Bon Jovi",
+    "batch": "batch-1",
+    "date": "2026-10-07",
+    "source": "All Out 80s playlist",
+    "title": "Livin' on a Prayer"
+  },
+  {
+    "artist": "Bonnie Tyler",
+    "batch": "batch-1",
+    "date": "2026-10-07",
+    "source": "All Out 80s playlist",
+    "title": "Total Eclipse of the Heart"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "batch": "batch-1",
+    "date": "2026-10-07",
+    "source": "All Out 80s playlist",
+    "title": "Born in the U.S.A."
+  },
+  {
+    "artist": "Dire Straits",
+    "batch": "batch-2",
+    "date": "2026-10-12",
+    "source": "All Out 80s playlist",
+    "title": "Money for Nothing"
+  },
+  {
+    "artist": "Peter Gabriel",
+    "batch": "batch-2",
+    "date": "2026-10-12",
+    "source": "All Out 80s playlist",
+    "title": "Sledgehammer"
+  },
+  {
+    "artist": "Phil Collins",
+    "batch": "batch-2",
+    "date": "2026-10-12",
+    "source": "All Out 80s playlist",
+    "title": "In the Air Tonight"
+  },
+  {
+    "artist": "Whitney Houston",
+    "batch": "batch-2",
+    "date": "2026-10-12",
+    "source": "All Out 80s playlist",
+    "title": "I Wanna Dance with Somebody"
+  },
+  {
+    "artist": "Simple Minds",
+    "batch": "batch-2",
+    "date": "2026-10-12",
+    "source": "All Out 80s playlist",
+    "title": "Don't You (Forget About Me)"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Love Story"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "You Belong with Me"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Shake It Off"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Blank Space"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Bad Blood"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Look What You Made Me Do"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Delicate"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "ME!"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "You Need to Calm Down"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "The Man"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "cardigan"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Anti-Hero"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "willow"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "All Too Well (10 Minute Version)"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Down with Disease"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Sample in a Jar"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Bouncing Around the Room"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Chalk Dust Torture"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Free"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Character Zero"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Waste"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Farmhouse"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Heavy Things"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "555"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-1",
+    "date": "2026-10-17",
+    "source": "Saturday song sprint",
+    "title": "Blaze On"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "We Are Never Ever Getting Back Together"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "I Knew You Were Trouble"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "22"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Style"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Wildest Dreams"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Out of the Woods"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "...Ready For It?"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "End Game"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Lover"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Bejeweled"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Lavender Haze"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Fortnight"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Wilson"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Tweezer"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Run Like an Antelope"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "The Lizards"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Maze"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Stash"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Fee"
+  },
+  {
+    "artist": "Phish",
+    "batch": "sprint-2",
+    "date": "2026-10-18",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Harry Hood"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Our Song"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Mine"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Mean"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Back to December"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Karma"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "I Can Do It With a Broken Heart"
+  },
+  {
+    "artist": "Michael Jackson",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "All Out 80s playlist",
+    "title": "Beat It"
+  },
+  {
+    "artist": "Toto",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "All Out 80s playlist",
+    "title": "Africa"
+  },
+  {
+    "artist": "Tom Petty",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "All Out 80s playlist",
+    "title": "Free Fallin'"
+  },
+  {
+    "artist": "Encanto Cast",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "Spotify search \u2014 Disney/Encanto",
+    "title": "We Don't Talk About Bruno"
+  },
+  {
+    "artist": "Justin Timberlake",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "Spotify search \u2014 Trolls",
+    "title": "Can't Stop the Feeling!"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Julius"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Bathtub Gin"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Ghost"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-3",
+    "date": "2026-10-19",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Birds of a Feather"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Teardrops on My Guitar"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Tim McGraw"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Fearless"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Fifteen"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Begin Again"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "This Is Taylor Swift playlist (Spotify)",
+    "title": "Cruel Summer"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "Spotify search \u2014 Phish",
+    "title": "If I Could"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Everything's Right"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "Spotify search \u2014 Phish",
+    "title": "The Divided Sky"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "Spotify search \u2014 Phish",
+    "title": "Punch You in the Eye"
+  },
+  {
+    "artist": "Bluey",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "Spotify search \u2014 Bluey",
+    "title": "Dance Mode"
+  },
+  {
+    "artist": "Billy Idol",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "All Out 80s playlist",
+    "title": "Eyes Without a Face"
+  },
+  {
+    "artist": "The Cure",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "All Out 80s playlist",
+    "title": "Just Like Heaven"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "All Out 80s playlist",
+    "title": "Kiss"
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "batch": "batch-4",
+    "date": "2026-10-26",
+    "source": "Scully's Mix playlist",
+    "title": "1979"
+  },
+  {
+    "artist": "Miles Davis",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "So What"
+  },
+  {
+    "artist": "Miles Davis",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Freddie Freeloader"
+  },
+  {
+    "artist": "The Dave Brubeck Quartet",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Take Five"
+  },
+  {
+    "artist": "The Dave Brubeck Quartet",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Blue Rondo \u00e0 la Turk"
+  },
+  {
+    "artist": "Thelonious Monk",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "'Round Midnight"
+  },
+  {
+    "artist": "Thelonious Monk",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Straight, No Chaser"
+  },
+  {
+    "artist": "Stan Getz",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "The Girl from Ipanema"
+  },
+  {
+    "artist": "Stan Getz & Charlie Byrd",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Desafinado"
+  },
+  {
+    "artist": "Norah Jones",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Don't Know Why"
+  },
+  {
+    "artist": "Norah Jones",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Come Away with Me"
+  },
+  {
+    "artist": "Diana Krall",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "The Look of Love"
+  },
+  {
+    "artist": "Diana Krall",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "'Deed I Do"
+  },
+  {
+    "artist": "Marvin Gaye",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "What's Going On"
+  },
+  {
+    "artist": "Stevie Wonder",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Superstition"
+  },
+  {
+    "artist": "The Temptations",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "My Girl"
+  },
+  {
+    "artist": "The Jackson 5",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "I Want You Back"
+  },
+  {
+    "artist": "Bob Marley & The Wailers",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Three Little Birds"
+  },
+  {
+    "artist": "Bob Marley & The Wailers",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "No Woman, No Cry"
+  },
+  {
+    "artist": "Jimmy Cliff",
+    "batch": "batch-5a",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "I Can See Clearly Now"
+  },
+  {
+    "artist": "Pearl Jam",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Alive"
+  },
+  {
+    "artist": "Pearl Jam",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Jeremy"
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Tonight, Tonight"
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Today"
+  },
+  {
+    "artist": "Primus",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "My Name Is Mud"
+  },
+  {
+    "artist": "Primus",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Jerry Was a Race Car Driver"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Under the Bridge"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Californication"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Touch of Grey"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Hell in a Bucket"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Paint It, Black"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Start Me Up"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Losing My Religion"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Everybody Hurts"
+  },
+  {
+    "artist": "The Beatles",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Come Together"
+  },
+  {
+    "artist": "The Beatles",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Here Comes the Sun"
+  },
+  {
+    "artist": "Dire Straits",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Sultans of Swing"
+  },
+  {
+    "artist": "Dire Straits",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Walk of Life"
+  },
+  {
+    "artist": "Blues Traveler",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Run-Around"
+  },
+  {
+    "artist": "Blues Traveler",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Hook"
+  },
+  {
+    "artist": "My Morning Jacket",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "One Big Holiday"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Ain't Life Grand"
+  },
+  {
+    "artist": "The Connells",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "'74-'75"
+  },
+  {
+    "artist": "The Connells",
+    "batch": "batch-5b",
+    "date": "2026-10-29",
+    "source": "Philip late-night sprint request",
+    "title": "Stone Cold Yesterday"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Harborcoat"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Little T&A"
+  },
+  {
+    "artist": "promptgenix",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Calls That Never Connected"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Travelin' Light"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Bertha"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Welcome To New York"
+  },
+  {
+    "artist": "David Bowie",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Modern Love"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Disappear"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "When the Levee Breaks"
+  },
+  {
+    "artist": "The Police",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Message In A Bottle"
+  },
+  {
+    "artist": "Tom Petty and the Heartbreakers",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Mary Jane's Last Dance"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Computer Blue"
+  },
+  {
+    "artist": "U2",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Who's Gonna Ride Your Wild Horses"
+  },
+  {
+    "artist": "Yes",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Owner Of A Lonely Heart"
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "batch": "batch-6a",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Maneater"
+  },
+  {
+    "artist": "Pixies",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Where Is My Mind?"
+  },
+  {
+    "artist": "The Cars",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Just What I Needed"
+  },
+  {
+    "artist": "Elton John",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Bennie And The Jets"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Guelah Papyrus"
+  },
+  {
+    "artist": "Perpetual Groove",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Crockett & Tubbs"
+  },
+  {
+    "artist": "Eurythmics",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Love Is a Stranger"
+  },
+  {
+    "artist": "Siouxsie and the Banshees",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Dear Prudence"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Landslide"
+  },
+  {
+    "artist": "Herbie Hancock",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Watermelon Man"
+  },
+  {
+    "artist": "Steel Pulse",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Chant a Psalm"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Breaking the Girl"
+  },
+  {
+    "artist": "Paul Simon",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Diamonds on the Soles of Her Shoes"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Born To Run"
+  },
+  {
+    "artist": "Ramones",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "I Wanna Be Sedated"
+  },
+  {
+    "artist": "Earth, Wind & Fire",
+    "batch": "batch-6b",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "September"
+  },
+  {
+    "artist": "The Connells",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Fun & Games"
+  },
+  {
+    "artist": "Robert Plant",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Heaven Knows"
+  },
+  {
+    "artist": "Madonna",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Angel"
+  },
+  {
+    "artist": "Analog Son",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "CTI"
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Have You Ever Seen The Rain"
+  },
+  {
+    "artist": "Wooden Shjips",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Back to Land"
+  },
+  {
+    "artist": "The Cure",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Lovesong"
+  },
+  {
+    "artist": "St. Paul & The Broken Bones",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Call Me"
+  },
+  {
+    "artist": "Sam Cooke",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Bring It On Home to Me"
+  },
+  {
+    "artist": "The Haggis Horns",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Haggis Express"
+  },
+  {
+    "artist": "Steely Dan",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Hey Nineteen"
+  },
+  {
+    "artist": "Speedometer",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Kick That Hustle"
+  },
+  {
+    "artist": "Eagle-Eye Cherry",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Save Tonight"
+  },
+  {
+    "artist": "The New Mastersounds",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Be Yourself"
+  },
+  {
+    "artist": "Electric Light Orchestra",
+    "batch": "batch-6c",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Livin' Thing"
+  },
+  {
+    "artist": "John Mellencamp",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Lonely Ol' Night"
+  },
+  {
+    "artist": "The Meters",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Just Kissed My Baby"
+  },
+  {
+    "artist": "Delvon Lamarr Organ Trio",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Move on Up"
+  },
+  {
+    "artist": "Crosby, Stills, Nash & Young",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Woodstock"
+  },
+  {
+    "artist": "Bob Seger",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Night Moves"
+  },
+  {
+    "artist": "Rebirth Brass Band",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Feel Like Funkin' It Up"
+  },
+  {
+    "artist": "Talking Heads",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Once in a Lifetime"
+  },
+  {
+    "artist": "The Cult",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Fire Woman"
+  },
+  {
+    "artist": "Of Monsters and Men",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Dirty Paws"
+  },
+  {
+    "artist": "Violent Femmes",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Kiss Off"
+  },
+  {
+    "artist": "Ziggy Marley & The Melody Makers",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Tomorrow People"
+  },
+  {
+    "artist": "Blues Traveler",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Support Your Local Emperor"
+  },
+  {
+    "artist": "Bob Dylan",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Don't Think Twice, It's All Right"
+  },
+  {
+    "artist": "The Who",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Magic Bus"
+  },
+  {
+    "artist": "Van Morrison",
+    "batch": "batch-6d",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Wild Night"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "There She Goes Again"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "She's So Cold"
+  },
+  {
+    "artist": "promptgenix",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "They'll Call This an Accident"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Pigeons"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "He's Gone"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Opalite"
+  },
+  {
+    "artist": "David Bowie",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Golden Years"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Don't Change"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Fool in the Rain"
+  },
+  {
+    "artist": "The Police",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "De Do Do Do, De Da Da Da"
+  },
+  {
+    "artist": "Tom Petty and the Heartbreakers",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Don't Come Around Here No More"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Darling Nikki"
+  },
+  {
+    "artist": "U2",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Beautiful Day"
+  },
+  {
+    "artist": "Echo & the Bunnymen",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Lips Like Sugar"
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "batch": "batch-6e",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "You Make My Dreams"
+  },
+  {
+    "artist": "Pixies",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Debaser"
+  },
+  {
+    "artist": "The Cars",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Tonight She Comes"
+  },
+  {
+    "artist": "Elton John",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Levon"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Possum"
+  },
+  {
+    "artist": "Perpetual Groove",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Astro Monkey"
+  },
+  {
+    "artist": "Mark Ronson, Bruno Mars",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Uptown Funk"
+  },
+  {
+    "artist": "Siouxsie and the Banshees",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Cities In Dust"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Rhiannon"
+  },
+  {
+    "artist": "Herbie Hancock",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Cantaloupe Island"
+  },
+  {
+    "artist": "Steel Pulse",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Your House"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Scar Tissue"
+  },
+  {
+    "artist": "Paul Simon",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Graceland"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Tunnel of Love"
+  },
+  {
+    "artist": "Ramones",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Blitzkrieg Bop"
+  },
+  {
+    "artist": "Earth, Wind & Fire",
+    "batch": "batch-6f",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Let's Groove"
+  },
+  {
+    "artist": "The Connells",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "I Suppose"
+  },
+  {
+    "artist": "Robert Plant",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "The Way I Feel"
+  },
+  {
+    "artist": "Madonna",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Ray of Light"
+  },
+  {
+    "artist": "Analog Son",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Analog Island"
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Fortunate Son"
+  },
+  {
+    "artist": "Wooden Shjips",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Eclipse"
+  },
+  {
+    "artist": "The Cure",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Friday I'm in Love"
+  },
+  {
+    "artist": "St. Paul & The Broken Bones",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "The Last Dance"
+  },
+  {
+    "artist": "Sam Cooke",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "(What A) Wonderful World"
+  },
+  {
+    "artist": "The Haggis Horns",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Enter the Haggis"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Gardening At Night"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Shattered"
+  },
+  {
+    "artist": "promptgenix",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "The Thing in Grafton Woods"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "C. Brown"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-6g",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Jack Straw"
+  },
+  {
+    "artist": "Redbone",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Come and Get Your Love"
+  },
+  {
+    "artist": "David Bowie",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Young Americans"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "New Sensation"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Ramble On"
+  },
+  {
+    "artist": "The Police",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "So Lonely"
+  },
+  {
+    "artist": "Tom Petty and the Heartbreakers",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Breakdown"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Take Me with U"
+  },
+  {
+    "artist": "U2",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Mysterious Ways"
+  },
+  {
+    "artist": "Assembly of Dust, Reid Genauer",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Honest Hour"
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Out of Touch"
+  },
+  {
+    "artist": "Pixies",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Here Comes Your Man"
+  },
+  {
+    "artist": "The Cars",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Shake It Up"
+  },
+  {
+    "artist": "Elton John",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Tiny Dancer"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "First Tube"
+  },
+  {
+    "artist": "Phil Collins",
+    "batch": "batch-6h",
+    "date": "2026-10-31",
+    "source": "Scully's Mix sprint",
+    "title": "Take Me Home"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Need You Tonight"
+  },
+  {
+    "artist": "Coldplay",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Clocks"
+  },
+  {
+    "artist": "The Smashing Pumpkins",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cherub Rock"
+  },
+  {
+    "artist": "Foo Fighters",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "My Hero"
+  },
+  {
+    "artist": "Tears For Fears",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Everybody Wants To Rule The World"
+  },
+  {
+    "artist": "Van Halen",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hot for Teacher"
+  },
+  {
+    "artist": "The Doobie Brothers",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "What a Fool Believes"
+  },
+  {
+    "artist": "Living Colour",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cult of Personality"
+  },
+  {
+    "artist": "Paul McCartney & Wings",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Jet"
+  },
+  {
+    "artist": "Huey Lewis & The News",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Power of Love"
+  },
+  {
+    "artist": "Pretenders",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Back on the Chain Gang"
+  },
+  {
+    "artist": "Wang Chung",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Dance Hall Days"
+  },
+  {
+    "artist": "Coldplay",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Viva La Vida"
+  },
+  {
+    "artist": "Warren Zevon",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "Werewolves of London"
+  },
+  {
+    "artist": "Spacehog",
+    "batch": "batch-7",
+    "date": "2026-11-02",
+    "source": "Scully's Mix reserve pool",
+    "title": "In the Meantime"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix playlist",
+    "title": "Everywhere"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "(Don't Go Back To) Rockville"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Driver 8"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Begin The Begin"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Monkey Man"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Sympathy For The Devil"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Dead Flowers"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Love Tractor"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hatfield"
+  },
+  {
+    "artist": "Widespread Panic",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Diner"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Ramble on Rose"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Dire Wolf"
+  },
+  {
+    "artist": "Grateful Dead",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Lazy River Road"
+  },
+  {
+    "artist": "R.E.M.",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The One I Love"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-8a",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Who\u2019s Afraid of Little Old Me?"
+  },
+  {
+    "artist": "Taylor Swift",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Getaway Car"
+  },
+  {
+    "artist": "Dillon Fence",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Frances"
+  },
+  {
+    "artist": "Dillon Fence",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Something For You"
+  },
+  {
+    "artist": "Dillon Fence",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "For A While"
+  },
+  {
+    "artist": "David Bowie",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Blue Jean"
+  },
+  {
+    "artist": "David Bowie",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Let's Dance"
+  },
+  {
+    "artist": "David Bowie",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Space Oddity"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Rover"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Song Remains the Same"
+  },
+  {
+    "artist": "Led Zeppelin",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Bron-Yr-Aur"
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "I Can't Go for That (No Can Do)"
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Private Eyes"
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Kiss on My List"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Chain"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "batch": "batch-8b",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Dreams"
+  },
+  {
+    "artist": "Fleetwood Mac",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Go Your Own Way"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The One Thing"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Never Tear Us Apart"
+  },
+  {
+    "artist": "INXS",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mediate"
+  },
+  {
+    "artist": "Nation of Language",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Across That Fine Line"
+  },
+  {
+    "artist": "Nation of Language",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Under the Water"
+  },
+  {
+    "artist": "Nation of Language",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "In Another Life"
+  },
+  {
+    "artist": "Nightmares On Wax",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Nights Introlude"
+  },
+  {
+    "artist": "Nightmares On Wax",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "You Wish"
+  },
+  {
+    "artist": "Nightmares On Wax",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Da Feelin"
+  },
+  {
+    "artist": "Perpetual Groove",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Scooter"
+  },
+  {
+    "artist": "Perpetual Groove",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Teakwood Betz"
+  },
+  {
+    "artist": "Perpetual Groove",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "All This Everything, pt 1"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "I Would Die 4 U"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-8c",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Purple Rain"
+  },
+  {
+    "artist": "Prince",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mountains"
+  },
+  {
+    "artist": "Siouxsie and the Banshees",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Peek-A-Boo"
+  },
+  {
+    "artist": "Siouxsie and the Banshees",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Kiss Them For Me"
+  },
+  {
+    "artist": "STS9",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "World Go Round"
+  },
+  {
+    "artist": "STS9",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Golden Gate"
+  },
+  {
+    "artist": "Tame Impala",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Elephant"
+  },
+  {
+    "artist": "Tame Impala",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Patience"
+  },
+  {
+    "artist": "The Police",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "When The World Is Running Down, You Make The Best Of What's Still Around"
+  },
+  {
+    "artist": "The Police",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Spirits In The Material World"
+  },
+  {
+    "artist": "the underbelly ft.roxie ray",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Shepard's Pie"
+  },
+  {
+    "artist": "the underbelly ft.roxie ray",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Funky Retro"
+  },
+  {
+    "artist": "Tom Petty and the Heartbreakers",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Refugee"
+  },
+  {
+    "artist": "Tom Petty and the Heartbreakers",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Don't Do Me Like That"
+  },
+  {
+    "artist": "U2",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Where The Streets Have No Name"
+  },
+  {
+    "artist": "U2",
+    "batch": "batch-8d",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Desire"
+  },
+  {
+    "artist": "A Flock Of Seagulls",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Space Age Love Song"
+  },
+  {
+    "artist": "A Flock Of Seagulls",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "I Ran (So Far Away)"
+  },
+  {
+    "artist": "Aerosmith",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Sweet Emotion"
+  },
+  {
+    "artist": "Aerosmith",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Dream On"
+  },
+  {
+    "artist": "Analog Son",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Puppified"
+  },
+  {
+    "artist": "Analog Son",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Gun Show"
+  },
+  {
+    "artist": "Blues Traveler",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Ivory Tusk"
+  },
+  {
+    "artist": "Blues Traveler",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "But Anyway"
+  },
+  {
+    "artist": "Bob Dylan",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Jokerman"
+  },
+  {
+    "artist": "Bob Dylan",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mr. Tambourine Man"
+  },
+  {
+    "artist": "Bob Seger",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mainstreet"
+  },
+  {
+    "artist": "Bob Seger",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hollywood Nights"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "I'm On Fire"
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hungry Heart"
+  },
+  {
+    "artist": "Burning Spear",
+    "batch": "batch-8e",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Commercial Development"
+  },
+  {
+    "artist": "Burning Spear",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Music"
+  },
+  {
+    "artist": "Charles Wright & The Watts 103rd Street Rhythm Band",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Joker"
+  },
+  {
+    "artist": "Charles Wright & The Watts 103rd Street Rhythm Band",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Express Yourself"
+  },
+  {
+    "artist": "Commodores",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Nightshift"
+  },
+  {
+    "artist": "Commodores",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Easy"
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Someday Never Comes"
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Long As I Can See The Light"
+  },
+  {
+    "artist": "Crosby, Stills, Nash & Young",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Wooden Ships"
+  },
+  {
+    "artist": "Crosby, Stills, Nash & Young",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Helplessly Hoping"
+  },
+  {
+    "artist": "Delvon Lamarr Organ Trio",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Can I Change My Mind"
+  },
+  {
+    "artist": "Delvon Lamarr Organ Trio",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Close but No Cigar"
+  },
+  {
+    "artist": "Diplomats of Solid Sound",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Willie's Theme"
+  },
+  {
+    "artist": "Diplomats of Solid Sound",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Chinese Connection"
+  },
+  {
+    "artist": "Duran Duran",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "A View to a Kill"
+  },
+  {
+    "artist": "Duran Duran",
+    "batch": "batch-8f",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hungry Like the Wolf"
+  },
+  {
+    "artist": "Earth, Wind & Fire",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Shining Star"
+  },
+  {
+    "artist": "Earth, Wind & Fire",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Serpentine Fire"
+  },
+  {
+    "artist": "Eddie Money",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Baby Hold On"
+  },
+  {
+    "artist": "Eddie Money",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Take Me Home Tonight"
+  },
+  {
+    "artist": "Electric Light Orchestra",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Turn to Stone"
+  },
+  {
+    "artist": "Electric Light Orchestra",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mr. Blue Sky"
+  },
+  {
+    "artist": "Elton John",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Rocket Man"
+  },
+  {
+    "artist": "Elton John",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mona Lisas And Mad Hatters"
+  },
+  {
+    "artist": "First Aid Kit",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Emmylou"
+  },
+  {
+    "artist": "First Aid Kit",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "My Silver Lining"
+  },
+  {
+    "artist": "Gold Leader",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cross Contamination"
+  },
+  {
+    "artist": "Gold Leader",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Creeper"
+  },
+  {
+    "artist": "Guns N' Roses",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Paradise City"
+  },
+  {
+    "artist": "Guns N' Roses",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Don't Cry"
+  },
+  {
+    "artist": "Herbie Hancock",
+    "batch": "batch-8g",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Wiggle Waggle"
+  },
+  {
+    "artist": "Herbie Hancock",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Fat Mama"
+  },
+  {
+    "artist": "Imagine Dragons",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Radioactive"
+  },
+  {
+    "artist": "Imagine Dragons",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Whatever It Takes"
+  },
+  {
+    "artist": "Jack Johnson",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Good People"
+  },
+  {
+    "artist": "Jack Johnson",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Holes To Heaven"
+  },
+  {
+    "artist": "James Gang",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Funk #49"
+  },
+  {
+    "artist": "James Gang",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Walk Away"
+  },
+  {
+    "artist": "Jamiroquai",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Virtual Insanity"
+  },
+  {
+    "artist": "Jamiroquai",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Canned Heat"
+  },
+  {
+    "artist": "John Mellencamp",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cherry Bomb"
+  },
+  {
+    "artist": "John Mellencamp",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Ain't Even Done With The Night"
+  },
+  {
+    "artist": "Khruangbin",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Maria Tambi\u00e9n"
+  },
+  {
+    "artist": "Khruangbin",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "People Everywhere (Still Alive)"
+  },
+  {
+    "artist": "Kings of Leon",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Sex on Fire"
+  },
+  {
+    "artist": "Kings of Leon",
+    "batch": "batch-8h",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Use Somebody"
+  },
+  {
+    "artist": "Madonna",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Holiday"
+  },
+  {
+    "artist": "Madonna",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Into the Groove"
+  },
+  {
+    "artist": "My Morning Jacket",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Gideon"
+  },
+  {
+    "artist": "My Morning Jacket",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Golden"
+  },
+  {
+    "artist": "Of Monsters and Men",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mountain Sound"
+  },
+  {
+    "artist": "Of Monsters and Men",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Slow And Steady"
+  },
+  {
+    "artist": "Paul McCartney, Wings",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Jet"
+  },
+  {
+    "artist": "Paul McCartney, Wings",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Band On The Run"
+  },
+  {
+    "artist": "Paul Simon",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Late in the Evening"
+  },
+  {
+    "artist": "Paul Simon",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "You Can Call Me Al"
+  },
+  {
+    "artist": "Pet Shop Boys",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "It's a Sin"
+  },
+  {
+    "artist": "Pet Shop Boys",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "West End Girls"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Loving Cup"
+  },
+  {
+    "artist": "Phish",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Mango Song"
+  },
+  {
+    "artist": "Pixies",
+    "batch": "batch-8i",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Monkey Gone to Heaven"
+  },
+  {
+    "artist": "Pixies",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Wave of Mutilation"
+  },
+  {
+    "artist": "Ramones",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Judy Is a Punk"
+  },
+  {
+    "artist": "Ramones",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Bonzo Goes to Bitburg"
+  },
+  {
+    "artist": "Rebirth Brass Band",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Do Whatcha Wanna"
+  },
+  {
+    "artist": "The Rolling Stones",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Tumbling Dice"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Naked in the Rain"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Soul to Squeeze"
+  },
+  {
+    "artist": "Robert Plant",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "In the Mood"
+  },
+  {
+    "artist": "Robert Plant",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Big Log"
+  },
+  {
+    "artist": "Sade",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Smooth Operator"
+  },
+  {
+    "artist": "Sade",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Sweetest Taboo"
+  },
+  {
+    "artist": "Soulive",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Doin' Something"
+  },
+  {
+    "artist": "Soulive",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Solid"
+  },
+  {
+    "artist": "Speedometer",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Happy"
+  },
+  {
+    "artist": "Speedometer",
+    "batch": "batch-8j",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Who's the Daddy Now"
+  },
+  {
+    "artist": "Steel Pulse",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Earth Crisis"
+  },
+  {
+    "artist": "Steel Pulse",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Not King James Version"
+  },
+  {
+    "artist": "Steely Dan",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Do It Again"
+  },
+  {
+    "artist": "Steely Dan",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Reelin' In The Years"
+  },
+  {
+    "artist": "Sting",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Fortress Around Your Heart"
+  },
+  {
+    "artist": "Sting",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "If You Love Somebody Set Them Free"
+  },
+  {
+    "artist": "Talking Heads",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Crosseyed and Painless"
+  },
+  {
+    "artist": "Talking Heads",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Burning Down the House"
+  },
+  {
+    "artist": "Technotronic",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Pump Up The Jam"
+  },
+  {
+    "artist": "Technotronic",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Move This"
+  },
+  {
+    "artist": "Tedeschi Trucks Band",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Midnight in Harlem"
+  },
+  {
+    "artist": "Tedeschi Trucks Band",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Soul Sweet Song"
+  },
+  {
+    "artist": "The Black Crowes",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Twice As Hard"
+  },
+  {
+    "artist": "The Black Crowes",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Remedy"
+  },
+  {
+    "artist": "The Brook & The Bluff",
+    "batch": "batch-8k",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Misnomer"
+  },
+  {
+    "artist": "The Brook & The Bluff",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Bad Bad News"
+  },
+  {
+    "artist": "The Cars",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Drive"
+  },
+  {
+    "artist": "The Connells",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Over There"
+  },
+  {
+    "artist": "The Crusaders",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Stomp And Buck Dance"
+  },
+  {
+    "artist": "The Cult",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Wild Flower"
+  },
+  {
+    "artist": "The Cure",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Boys Don't Cry"
+  },
+  {
+    "artist": "The Go-Go's",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Vacation"
+  },
+  {
+    "artist": "The Heavy Heavy",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Go Down River"
+  },
+  {
+    "artist": "The Meters",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cissy Strut"
+  },
+  {
+    "artist": "The Motet",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cheap Shit"
+  },
+  {
+    "artist": "The New Mastersounds",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Smoothie"
+  },
+  {
+    "artist": "The Soultwisters",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Soup Is Hot"
+  },
+  {
+    "artist": "The Velvet Underground",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Who Loves the Sun"
+  },
+  {
+    "artist": "The Who",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Join Together"
+  },
+  {
+    "artist": "Thievery Corporation",
+    "batch": "batch-8l",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "San San Rock"
+  },
+  {
+    "artist": "Tina Turner",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "One Of The Living"
+  },
+  {
+    "artist": "Van Morrison",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Domino"
+  },
+  {
+    "artist": "Violent Femmes",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Please Do Not Go"
+  },
+  {
+    "artist": "Vulfpeck",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Speedwalker"
+  },
+  {
+    "artist": "Wings",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Goodnight Tonight"
+  },
+  {
+    "artist": "Wooden Shjips",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Staring At The Sun"
+  },
+  {
+    "artist": "Ziggy Marley & The Melody Makers",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Tumblin' Down"
+  },
+  {
+    "artist": "1969 Collective, Half Moon Run",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Fatal Line"
+  },
+  {
+    "artist": "Addison Groove Project",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Beat Me 'Til I'm Blue"
+  },
+  {
+    "artist": "Afternoons in Stereo",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Soul Sugar"
+  },
+  {
+    "artist": "Aiff",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Seduction"
+  },
+  {
+    "artist": "Al Green",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Let's Stay Together"
+  },
+  {
+    "artist": "Alice In Chains",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Would?"
+  },
+  {
+    "artist": "Allman Brothers Band",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "In Memory Of Elizabeth Reed"
+  },
+  {
+    "artist": "almost monday",
+    "batch": "batch-8m",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "lost"
+  },
+  {
+    "artist": "Alpha Blondy",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Sweet Fanta Diallo"
+  },
+  {
+    "artist": "America, George Martin",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Ventura Highway"
+  },
+  {
+    "artist": "Animal Logic",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "I'll Be Alright"
+  },
+  {
+    "artist": "Aretha Franklin",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Respect"
+  },
+  {
+    "artist": "Arrested Development",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Mr. Wendal"
+  },
+  {
+    "artist": "Asia",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Heat Of The Moment"
+  },
+  {
+    "artist": "Assembly of Dust, Reid Genauer",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Man with a Plan"
+  },
+  {
+    "artist": "Average White Band",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Pick Up the Pieces"
+  },
+  {
+    "artist": "BALTHVS",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Sun Colored Eyes"
+  },
+  {
+    "artist": "Bananarama",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Cruel Summer"
+  },
+  {
+    "artist": "Barbara Lewis",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hello Stranger"
+  },
+  {
+    "artist": "Barefoot Manner",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "After Midnight"
+  },
+  {
+    "artist": "Barenaked Ladies",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "The Old Apartment"
+  },
+  {
+    "artist": "Barenaked Ladies, Michael Phillip Wojewoda",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Brian Wilson"
+  },
+  {
+    "artist": "Beastie Boys",
+    "batch": "batch-8n",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Hey Ladies"
+  },
+  {
+    "artist": "Bebe Rexha, Faithless",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "New Religion"
+  },
+  {
+    "artist": "Bee Gees",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Night Fever"
+  },
+  {
+    "artist": "Berlin",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "No More Words"
+  },
+  {
+    "artist": "Big Country",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "In A Big Country"
+  },
+  {
+    "artist": "Big Head Todd and The Monsters",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Bittersweet"
+  },
+  {
+    "artist": "Bill Withers",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Use Me"
+  },
+  {
+    "artist": "Billy Preston",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Outa-Space"
+  },
+  {
+    "artist": "Black Pumas",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Colors"
+  },
+  {
+    "artist": "Bleachers",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Don't Take The Money"
+  },
+  {
+    "artist": "Blind Faith",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Can't Find My Way Home"
+  },
+  {
+    "artist": "Blind Melon",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "No Rain"
+  },
+  {
+    "artist": "Bobby Darin",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Beyond the Sea"
+  },
+  {
+    "artist": "Bobby Moore & The Rhythm Aces",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Searching For My Love"
+  },
+  {
+    "artist": "Bonham, The Jason Bonham Band",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Wait for You"
+  },
+  {
+    "artist": "Bonny Light Horseman, Eric D. Johnson, Josh Kaufman, Ana\u00efs Mitchell",
+    "batch": "batch-8o",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Deep In Love"
+  },
+  {
+    "artist": "Boston",
+    "batch": "batch-8p",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Foreplay / Long Time"
+  },
+  {
+    "artist": "Boston Horns",
+    "batch": "batch-8p",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Funkafized"
+  },
+  {
+    "artist": "Boz Scaggs",
+    "batch": "batch-8p",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Lowdown"
+  },
+  {
+    "artist": "Bret McKenzie",
+    "batch": "batch-8p",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "Dave's Place"
+  },
+  {
+    "artist": "Bryan Adams",
+    "batch": "batch-8p",
+    "date": "2026-11-03",
+    "source": "Scully's Mix reserve pool",
+    "title": "One Night Love Affair"
+  }
 ]

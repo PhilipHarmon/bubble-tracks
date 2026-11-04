@@ -23,6 +23,14 @@ function Bubble({ bubble, spot, onPop, onExpire }) {
       <span className="pop-emoji" aria-hidden="true">💡</span>
       <span className="pop-text">{bubble.text}</span>
       <span className="pop-hint" aria-hidden="true">tap to pop</span>
+      <span className="pop-burst" aria-hidden="true">
+        <i>✦</i>
+        <i>✦</i>
+        <i>✦</i>
+        <i>✦</i>
+        <i>✦</i>
+        <i>✦</i>
+      </span>
     </button>
   );
 }
