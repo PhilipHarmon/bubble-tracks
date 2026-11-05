@@ -609,9 +609,16 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
 /* ---- Library toolbar: sticky, scannable ---- */
 .library-toolbar {
   position: sticky;
-  top: 92px;
+  /* Tuck the bar's top edge just UNDER the opaque site header (header is
+     ~64–78px tall depending on width and stacks at z-index 1000, above this
+     bar): the old 92px offset left a ~15–25px see-through seam above the
+     stuck bar where scrolling cards showed through. The bar's own top
+     padding keeps its first control flush with the header's bottom edge. */
+  top: 64px;
   z-index: 60;
   background: var(--page);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 10px 18px -12px rgba(120, 60, 20, 0.35);
   padding: 0.85rem 0 0.35rem;
   margin: 0.5rem 0 1.25rem;
 }
@@ -835,10 +842,25 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
 .tv-foot { color: #d8c6ad; font-size: clamp(1rem, 1.8vw, 1.3rem); margin: 0.4rem 0 0; }
 
 @media (max-width: 720px) {
-  .library-toolbar { top: 84px; }
+  /* Phone header measures ~63px tall: tuck the sticky bar under it (see the
+     desktop note above) instead of the old 84px, which left a ~21px seam. */
+  .library-toolbar { top: 48px; padding: 0.6rem 0 0.3rem; margin-bottom: 1rem; }
+  .library-controls { gap: 0.55rem; }
   .library-row { flex-direction: column; align-items: stretch; }
   .library-row-between { flex-direction: row; align-items: center; }
   .sort-label { flex: none; }
+  /* THE giant-search-box fix: the base rule `.library-row input { flex:
+     1 1 220px }` was written for the desktop ROW layout (grow wide from a
+     220px width). In this stacked COLUMN layout the same flex-basis becomes
+     a 220px HEIGHT, ballooning the search box to a third of the screen.
+     The sort label already had its flex reset here; the input now gets the
+     same treatment and returns to its natural single-line height. */
+  .library-row input[type='search'] { flex: none; }
+  /* Category chips: one swipeable line instead of three wrapped rows, so
+     the stuck bar stays compact. Every chip is still reachable. */
+  .style-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.3rem; scrollbar-width: none; }
+  .style-chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; }
   .az-bar { top: auto; position: static; border-radius: var(--radius); }
   .az-group { scroll-margin-top: 120px; }
   .video-row { flex-wrap: wrap; }
