@@ -105,6 +105,9 @@ a { color: var(--accent-deep); }
 .footer-nav a { color: #e8d5bd; text-decoration: none; }
 .footer-nav a:hover { color: #fff; text-decoration: underline; }
 .footer-copy { text-align: center; padding: 0 1rem 1.5rem; color: #a98f73; font-size: 0.85rem; }
+.shs-credit { text-align: center; padding: 0 1rem 1.5rem; margin-top: -1.1rem; color: #a98f73; font-size: 0.8rem; }
+.shs-credit a { color: #e8d5bd; }
+.shs-credit a:hover { color: #fff; text-decoration: underline; }
 
 .btn {
   display: inline-block;
@@ -868,4 +871,40 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
   .video-row-actions { width: 100%; }
   .tv-code { font-size: 2.3rem; letter-spacing: 0.25em; }
   .tv-player-shell .pop-bubble { max-width: 72%; font-size: 0.95rem; }
+}
+
+/* ---- Back to top (v9.1) ---- */
+/* z-index 70: above the cards and the sticky library toolbar (60),
+   below the theater backdrop (90), site header (1000) and TV modal
+   (1200). 52px circle = a comfortable phone tap target. */
+.back-to-top {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 70;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-deep);
+  background: var(--accent);
+  color: #fff8ee;
+  font: inherit;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow-lift);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s ease;
+}
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover { background: #b25a28; }
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
 }
