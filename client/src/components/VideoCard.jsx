@@ -25,6 +25,7 @@ export default function VideoCard({ video, showQueueButton = true }) {
         </div>
         <div className="video-card-foot">
           {video.category && <span className="kind-badge">{video.category}</span>}
+          {video.christmas && <span className="kind-badge kind-badge-christmas">🎄 Christmas</span>}
           {video.pops && video.pops.length > 0 && (
             <span className="muted small">🫧 {video.pops.length} bubbles</span>
           )}

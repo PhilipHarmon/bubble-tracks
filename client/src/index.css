@@ -908,3 +908,35 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
 @media (prefers-reduced-motion: reduce) {
   .back-to-top { transition: none; }
 }
+
+/* --- Christmas collection (v10) -------------------------------------------
+   The holiday accent is a deep pine green set against the site's sunset
+   terracotta — festive, but still the same warm room. */
+.hero-christmas {
+  background: linear-gradient(160deg, #20301f 0%, #2f5d3a 52%, #7e3517 125%);
+}
+.chip-christmas {
+  border-color: #b9cfba;
+  color: #2f5d3a;
+  text-decoration: none;
+}
+.chip-christmas:hover {
+  border-color: #2f5d3a;
+  color: #1f4430;
+  text-decoration: none;
+}
+.kind-badge-christmas {
+  background: #e3efe0;
+  color: #1f4430;
+}
+.christmas-empty {
+  text-align: center;
+  background: var(--surface);
+  border: 2px dashed #b9cfba;
+  border-radius: var(--radius);
+  padding: 2.5rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.christmas-empty-icon { font-size: 2.6rem; line-height: 1; }
+.christmas-empty h2 { color: #1f4430; margin: 0.75rem 0 0.5rem; }
+.christmas-empty p { color: var(--muted); max-width: 480px; margin: 0 auto; }

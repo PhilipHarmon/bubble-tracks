@@ -50,7 +50,7 @@ function artistLetter(video) {
   return /[A-Z]/.test(ch) ? ch : '#';
 }
 
-export default function Home() {
+export default function Home({ christmasOnly = false }) {
   const [videos, setVideos] = useState(null);
   const [categories, setCategories] = useState([]);
   const [activeCat, setActiveCat] = useState('');
@@ -86,16 +86,25 @@ export default function Home() {
     }
   }, [view]);
 
+  // The Christmas tab (/christmas) is this same page looking at the
+  // library through one extra lens: only songs carrying the `christmas`
+  // marker. Everything downstream — search, sort, A–Z, shuffle — runs on
+  // the pool, so behavior inside the tab is identical to the main shelf.
+  const pool = useMemo(() => {
+    if (!videos) return null;
+    return christmasOnly ? videos.filter((v) => v.christmas) : videos;
+  }, [videos, christmasOnly]);
+
   const filtered = useMemo(() => {
-    if (!videos) return [];
+    if (!pool) return [];
     const q = query.trim().toLowerCase();
-    const list = videos.filter((v) => {
-      if (activeCat && v.category !== activeCat) return false;
+    const list = pool.filter((v) => {
+      if (!christmasOnly && activeCat && v.category !== activeCat) return false;
       if (q && !`${v.title} ${v.artist}`.toLowerCase().includes(q)) return false;
       return true;
     });
     return sortVideos(list, sort);
-  }, [videos, activeCat, query, sort]);
+  }, [pool, activeCat, query, sort, christmasOnly]);
 
   // A–Z view: group the SAME filtered+sorted list by artist initial.
   const azGroups = useMemo(() => {
@@ -126,29 +135,44 @@ export default function Home() {
   }
 
   function shuffle() {
-    if (!videos || !videos.length) return;
-    const pick = videos[Math.floor(Math.random() * videos.length)];
+    const src = pool && pool.length ? pool : videos;
+    if (!src || !src.length) return;
+    const pick = src[Math.floor(Math.random() * src.length)];
     navigate(`/watch/${pick.id}`, { state: { shuffle: true } });
   }
 
   return (
     <div>
-      <section className="hero">
+      <section className={christmasOnly ? 'hero hero-christmas' : 'hero'}>
         <div className="hero-inner">
           <div className="hero-brand" aria-label="Bubble Tracks">
             <span aria-hidden="true">🫧</span> Bubble Tracks
           </div>
-          <p className="hero-kicker">Music videos, annotated</p>
-          <h1>Pop the bubbles. Learn the stories.</h1>
-          <p className="hero-sub">
-            Classic music videos with pop-up trivia bubbles timed to the music — recording
-            stories, chart facts, and the culture of the moment. Tap a bubble to pop it.
-          </p>
+          {christmasOnly ? (
+            <>
+              <p className="hero-kicker">🎄 The Christmas collection</p>
+              <h1>Christmas songs, with their stories.</h1>
+              <p className="hero-sub">
+                The holiday shelf of the library — every Christmas song in one place, each
+                with its pop-up trivia bubbles timed to the music. It lives here all year;
+                December just gives it more company.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="hero-kicker">Music videos, annotated</p>
+              <h1>Pop the bubbles. Learn the stories.</h1>
+              <p className="hero-sub">
+                Classic music videos with pop-up trivia bubbles timed to the music — recording
+                stories, chart facts, and the culture of the moment. Tap a bubble to pop it.
+              </p>
+            </>
+          )}
           <div className="hero-actions">
             <button type="button" className="btn btn-primary btn-lg" onClick={shuffle}>
               🔀 Shuffle play
             </button>
-            {popOfDay && (
+            {popOfDay && !christmasOnly && (
               <Link to={`/watch/${popOfDay.id}`} className="btn btn-ghost btn-lg">
                 🫧 Today's pick: {popOfDay.title}
               </Link>
@@ -158,7 +182,7 @@ export default function Home() {
       </section>
 
       <div className="narrow page">
-        {popOfDay && (
+        {popOfDay && !christmasOnly && (
           <section className="pop-of-day">
             <div className="pod-label">🫧 Pop of the day</div>
             <Link to={`/watch/${popOfDay.id}`} className="pod-card">
@@ -218,6 +242,7 @@ export default function Home() {
                 </button>
               )}
             </div>
+            {!christmasOnly && (
             <div className="style-chips" role="group" aria-label="Filter by category">
               <button
                 type="button"
@@ -226,6 +251,9 @@ export default function Home() {
               >
                 All
               </button>
+              <Link to="/christmas" className="chip chip-christmas">
+                🎄 Christmas
+              </Link>
               {categories.map((c) => (
                 <button
                   key={c}
@@ -237,10 +265,11 @@ export default function Home() {
                 </button>
               ))}
             </div>
+            )}
             {videos && (
               <p className="results-count" role="status">
-                Showing {filtered.length} of {videos.length} videos
-                {activeCat ? ` in ${activeCat}` : ''}
+                Showing {filtered.length} of {pool ? pool.length : 0} videos
+                {christmasOnly ? ' in the Christmas collection' : activeCat ? ` in ${activeCat}` : ''}
                 {query.trim() ? ` matching “${query.trim()}”` : ''}
               </p>
             )}
@@ -249,7 +278,18 @@ export default function Home() {
 
         {error && <p className="alert alert-error">{error}</p>}
         {!videos && !error && <p className="muted">Loading the library…</p>}
-        {videos && filtered.length === 0 && (
+        {videos && christmasOnly && pool && pool.length === 0 && (
+          <section className="christmas-empty">
+            <div className="christmas-empty-icon" aria-hidden="true">🎄</div>
+            <h2>The Christmas shelf is still bare</h2>
+            <p>
+              The Christmas collection arrives with the holiday sprint — when those songs
+              land, every one of them will live right here on this tab, all year round.
+              Until then, the tree is up, but the records aren't under it yet.
+            </p>
+          </section>
+        )}
+        {videos && filtered.length === 0 && !(christmasOnly && pool && pool.length === 0) && (
           <p className="muted">Nothing matches — try a different search, or clear the filters above.</p>
         )}
 

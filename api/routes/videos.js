@@ -19,11 +19,12 @@ function requireAdmin(req, res, next) {
   return res.status(401).json({ error: 'Admin key required.' });
 }
 
-// GET /api/videos?category=&search=
+// GET /api/videos?category=&search=&christmas=true
 router.get('/videos', async (req, res, next) => {
   try {
     const q = {};
     if (req.query.category) q.category = req.query.category;
+    if (req.query.christmas === 'true') q.christmas = true;
     if (req.query.search) {
       const rx = new RegExp(escapeRegExp(req.query.search), 'i');
       q.$or = [{ title: rx }, { artist: rx }];
@@ -151,6 +152,7 @@ function sanitize(body) {
     artist: String(body.artist || '').trim(),
     year: body.year ? Number(body.year) : undefined,
     category: String(body.category || '').trim() || undefined,
+    christmas: body.christmas === true || body.christmas === 'true',
     youtubeId: extractYoutubeId(body.youtubeId || ''),
     description: String(body.description || '').trim(),
     pops,

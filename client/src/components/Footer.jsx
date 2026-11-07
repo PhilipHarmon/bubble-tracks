@@ -29,6 +29,17 @@ export default function Footer() {
         </div>
       </div>
       <p className="footer-copy">© {year} Philip Harmon. Turn it up.</p>
+      <p className="shs-credit">
+        ⌛ Built by{' '}
+        <a
+          href="https://stolenhourssoftware.github.io"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Stolen Hours Software
+        </a>{' '}
+        — built after bedtime.
+      </p>
     </footer>
   );
 }

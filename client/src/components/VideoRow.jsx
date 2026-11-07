@@ -23,6 +23,7 @@ export default function VideoRow({ video }) {
           {video.artist}
           {video.year ? ` · ${video.year}` : ''}
           {video.category ? ` · ${video.category}` : ''}
+          {video.christmas ? ' · 🎄 Christmas' : ''}
           {video.pops && video.pops.length > 0 ? ` · 🫧 ${video.pops.length}` : ''}
         </div>
       </div>
