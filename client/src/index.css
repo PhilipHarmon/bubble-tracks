@@ -1178,3 +1178,61 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
   .hero-bubbles .rise-wrap { position: static; }
   .hero-bubbles .rise-bubble { width: 118px !important; height: 118px !important; font-size: 0.92rem !important; }
 }
+
+/* ---- v12 revisions: black headline bubbles, wider bubble spread,
+   centered + bigger header title, Stolen Hours footer link ---- */
+
+/* 3 — Header title: even bigger, centered; nav centered beneath it.
+   (The mobile dropdown nav is absolutely positioned off .header-inner,
+   so the column layout leaves it working as before.) */
+.header-inner {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.4rem 1.25rem 1.15rem;
+}
+.site-title {
+  font-size: 2.9rem;
+  margin-right: 0;
+  text-align: center;
+  line-height: 1.1;
+}
+.site-nav { justify-content: center; }
+
+/* 1 — Headline bubbles ("Pop the bubbles." / "Learn the stories.")
+   render their words in black. Other phrase bubbles keep the cream. */
+.rise-bubble--headline {
+  color: #000;
+  text-shadow: none;
+}
+
+/* 2 — Phrase bubbles spread wider: a broader field, a taller rise,
+   so the six lanes sit further apart horizontally and vertically. */
+.hero-bubbles {
+  max-width: 1320px;
+  height: 320px;
+  --rise-dist: 560px;
+}
+
+/* 4 — Footer credit: the Stolen Hours name is a live link. */
+.footer-credit-link {
+  color: #ffd9ad;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-credit-link:hover { color: #fff; }
+
+/* Phones: temper the spread — smaller bubbles, a taller field, and the
+   widest bubble (last phrase) anchored to the right edge so nothing
+   clips or scrolls sideways. Title stays big but fits one line. */
+@media (max-width: 720px) {
+  .header-inner { padding: 1rem 1rem 0.85rem; }
+  .site-title { font-size: 2.05rem; }
+  .hero-bubbles { height: 250px; --rise-dist: 440px; }
+  .hero-bubbles .rise-bubble {
+    width: 104px !important;
+    height: 104px !important;
+    font-size: 0.82rem !important;
+  }
+  .hero-bubbles .rise-wrap:nth-child(6) { left: auto !important; right: 0; }
+}

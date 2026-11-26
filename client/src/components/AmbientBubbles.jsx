@@ -6,7 +6,7 @@ import React, { useRef, useState } from 'react';
 // CSS; under prefers-reduced-motion the stylesheet stills them (hero
 // bubbles become a static row, flank bubbles hide).
 
-function RiseBubble({ className = '', style, bubbleStyle, label, children }) {
+function RiseBubble({ className = '', bubbleClassName = '', style, bubbleStyle, label, children }) {
   const [gen, setGen] = useState(0);
   const [popping, setPopping] = useState(false);
   const timer = useRef(null);
@@ -24,7 +24,7 @@ function RiseBubble({ className = '', style, bubbleStyle, label, children }) {
     <div key={gen} className={`rise-wrap ${className}`} style={style}>
       <button
         type="button"
-        className={`rise-bubble${popping ? ' popping' : ''}`}
+        className={`rise-bubble ${bubbleClassName}${popping ? ' popping' : ''}`}
         style={bubbleStyle}
         onClick={handlePop}
         aria-label={label || 'Pop the bubble'}
@@ -35,14 +35,17 @@ function RiseBubble({ className = '', style, bubbleStyle, label, children }) {
   );
 }
 
-// The banner's words, floating in bubbles (v6 hero).
+// The banner's words, floating in bubbles (v6 hero; v12 spread the lanes
+// wider across the banner and staggered the rise phases further apart).
+// The two headline phrases carry `headline: true` — their bubble text
+// renders black via .rise-bubble--headline (v12).
 const HERO_PHRASES = [
-  { text: 'Pop the bubbles.', size: 168, fontSize: '1.28rem', left: '4%', dur: 25, delay: -7, wiggle: 5 },
-  { text: 'Learn the stories.', size: 158, fontSize: '1.2rem', left: '24%', dur: 29, delay: -19, wiggle: 6 },
-  { text: 'Recording stories', size: 126, fontSize: '1rem', left: '43%', dur: 21, delay: -3, wiggle: 4.4 },
-  { text: 'Chart facts', size: 106, fontSize: '0.95rem', left: '58%', dur: 19, delay: -12, wiggle: 4 },
-  { text: 'The culture of the moment', size: 180, fontSize: '1.1rem', left: '72%', dur: 31, delay: -23, wiggle: 6.4 },
-  { text: 'Tap a bubble to pop it', size: 136, fontSize: '0.98rem', left: '36%', dur: 26, delay: -15, wiggle: 5.2 },
+  { text: 'Pop the bubbles.', headline: true, size: 168, fontSize: '1.28rem', left: '1%', dur: 26, delay: -4, wiggle: 5 },
+  { text: 'Learn the stories.', headline: true, size: 158, fontSize: '1.2rem', left: '17%', dur: 30, delay: -17, wiggle: 6 },
+  { text: 'Tap a bubble to pop it', size: 136, fontSize: '0.98rem', left: '32%', dur: 27, delay: -11, wiggle: 5.2 },
+  { text: 'Recording stories', size: 126, fontSize: '1rem', left: '46%', dur: 22, delay: -7, wiggle: 4.4 },
+  { text: 'Chart facts', size: 106, fontSize: '0.95rem', left: '60%', dur: 20, delay: -14, wiggle: 4 },
+  { text: 'The culture of the moment', size: 180, fontSize: '1.1rem', left: '77%', dur: 32, delay: -25, wiggle: 6.4 },
 ];
 
 export function HeroBubbles() {
@@ -52,6 +55,7 @@ export function HeroBubbles() {
         <RiseBubble
           key={p.text}
           className="hero-rise"
+          bubbleClassName={p.headline ? 'rise-bubble--headline' : ''}
           label={`Pop the bubble: ${p.text}`}
           style={{
             left: p.left,
