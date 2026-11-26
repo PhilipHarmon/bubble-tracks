@@ -906,3 +906,275 @@ label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; fo
   .tv-static-burst { display: none; }
   .tv-knob { transition: none; }
 }
+
+/* ---- v6 revisions: bigger header + TV, Jerrold cable box, banner and
+   flank bubbles, fullscreen watch fix ---- */
+
+/* 1 — Header, much bigger. */
+.header-inner { max-width: 1280px; padding: 1.15rem 1.25rem; }
+.site-title { font-size: 2.05rem; }
+.site-nav a, .nav-link-btn { font-size: 1.12rem; padding: 0.7rem 1.05rem; }
+.nav-toggle { font-size: 1.45rem; padding: 0.5rem 0.95rem; }
+
+/* 5 — Banner: bigger title, no buttons; the words float in bubbles. */
+.hero { padding: 4.5rem 1rem 3rem; overflow: hidden; position: relative; }
+.hero-inner { max-width: 880px; }
+.hero-kicker { font-size: 0.95rem; }
+.hero h1 { font-size: 3.5rem; }
+
+/* Ambient rising bubbles (hero phrases + TV flanks). */
+.hero-bubbles {
+  position: relative;
+  height: 260px;
+  max-width: 980px;
+  margin: 0.5rem auto 0;
+  --rise-dist: 480px;
+}
+.rise-wrap {
+  position: absolute;
+  top: calc(100% - 36px);
+  animation: rise-loop var(--rise-dur, 24s) linear infinite;
+  animation-delay: var(--rise-delay, 0s);
+  will-change: transform;
+}
+.flank-rise { top: auto; bottom: -90px; }
+@keyframes rise-loop {
+  0% { transform: translateY(0); opacity: 0; }
+  7% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { transform: translateY(calc(-1 * var(--rise-dist, 480px))); opacity: 0; }
+}
+.rise-bubble {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 225, 190, 0.75);
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 244, 226, 0.5) 34%, rgba(255, 205, 160, 0.2) 62%, rgba(201, 106, 53, 0.2) 100%);
+  box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.35), 0 6px 18px rgba(46, 29, 18, 0.25);
+  cursor: pointer;
+  padding: 11%;
+  color: #fff8ee;
+  font-family: inherit;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 1px 6px rgba(46, 29, 18, 0.45);
+  -webkit-tap-highlight-color: transparent;
+}
+.rise-bubble::after {
+  content: '';
+  position: absolute;
+  top: 13%;
+  left: 17%;
+  width: 27%;
+  height: 15%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  transform: rotate(-24deg);
+  filter: blur(1px);
+  pointer-events: none;
+}
+.rise-bubble:focus-visible { outline: 3px solid #ffd9ad; outline-offset: 2px; }
+.rise-bubble.popping { animation: bubble-pop 0.28s ease forwards; pointer-events: none; }
+.rise-wiggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: bubble-wiggle var(--wig-dur, 5s) ease-in-out infinite alternate;
+}
+@keyframes bubble-wiggle {
+  from { transform: translateX(-5px) rotate(-2.5deg); }
+  to { transform: translateX(5px) rotate(2.5deg); }
+}
+
+/* 3 — Flank bubbles beside the TV (wide screens only, where the page
+   margins beside the set actually exist). */
+.flank-bubbles {
+  display: none;
+  position: fixed;
+  top: 118px;
+  height: calc(100vh - 150px);
+  width: 96px;
+  z-index: 2;
+  pointer-events: none;
+  --rise-dist: calc(100vh - 30px);
+}
+.flank-left { left: 14px; }
+.flank-right { right: 14px; }
+.flank-bubbles .rise-bubble { pointer-events: auto; }
+.flank-rise .rise-bubble {
+  border-color: rgba(201, 106, 53, 0.5);
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 244, 226, 0.5) 40%, rgba(201, 106, 53, 0.14) 78%);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.5), 0 4px 14px rgba(120, 60, 20, 0.18);
+}
+@media (min-width: 1560px) {
+  .flank-bubbles { display: block; }
+}
+.tv-set.mode-theater .flank-bubbles,
+.tv-set:fullscreen .flank-bubbles,
+.tv-set:-webkit-full-screen .flank-bubbles { display: none; }
+
+/* 2 — A bigger set: wider wrap, wider side panels, much bigger knobs. */
+.tv-wrap { max-width: 1380px; }
+.tv-cabinet { padding: 1.3rem; gap: 1.1rem; }
+.tv-side { width: 132px; }
+.tv-side-left { width: 74px; }
+.tv-knob { width: 78px; height: 78px; }
+.tv-knob-notch { width: 6px; height: 20px; top: 7px; margin-left: -3px; }
+.tv-knob-label { font-size: 0.8rem; }
+.tv-set.mode-theater .tv-assembly { width: min(1440px, 97vw); }
+
+/* 4 — Cable box, Jerrold-style: wood top with a button row, dark body,
+   big red LED, standing on little feet on top of the TV. */
+.cable-box {
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
+  margin: 0 1.4rem 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #0d0703;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #2b211a 0%, #1a120b 55%, #120b05 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 220, 170, 0.18),
+    0 16px 24px rgba(20, 10, 2, 0.45);
+}
+.cable-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0.95rem 0.5rem;
+  border-bottom: 2px solid #0d0703;
+  background:
+    repeating-linear-gradient(93deg, rgba(0, 0, 0, 0.07) 0 2px, transparent 2px 7px),
+    linear-gradient(155deg, #96622e 0%, #74471f 55%, #5d3a1e 100%);
+}
+.cable-top-btns { display: flex; gap: 0.45rem; }
+.cable-top-btn {
+  width: 34px;
+  height: 12px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #3a2c1e 0%, #241708 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 220, 170, 0.3), 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.cable-top-brand {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffdfae;
+  text-shadow: 0 1px 2px rgba(30, 16, 4, 0.85);
+  white-space: nowrap;
+}
+.cable-face {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 0.8rem 0.95rem 0.95rem;
+}
+.cable-led {
+  font-size: 1.9rem;
+  letter-spacing: 0.16em;
+  color: #ff2418;
+  background: radial-gradient(120% 140% at 50% 40%, #220606 0%, #0e0202 72%);
+  border-color: #3d0d0d;
+  border-radius: 6px;
+  padding: 0.5rem 0.85rem;
+  margin-top: 0.1rem;
+  text-shadow: 0 0 8px rgba(255, 36, 24, 0.95), 0 0 24px rgba(255, 36, 24, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+.cable-led::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0 1px, transparent 1px 3px);
+  pointer-events: none;
+}
+.cable-feet {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+.cable-foot {
+  width: 56px;
+  height: 13px;
+  background: linear-gradient(180deg, #241708 0%, #0d0703 100%);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 7px 9px rgba(20, 10, 2, 0.35);
+}
+
+/* 6 — Fullscreen: the video fills the tube. Title, sub, description,
+   scorecard, and Up Next all hide; only the player (bubbles included)
+   and the slim popped bar remain. Theater keeps the full layout. */
+.tv-set:fullscreen .watch-title,
+.tv-set:-webkit-full-screen .watch-title,
+.tv-set:fullscreen .watch-sub,
+.tv-set:-webkit-full-screen .watch-sub,
+.tv-set:fullscreen .watch-desc,
+.tv-set:-webkit-full-screen .watch-desc,
+.tv-set:fullscreen .up-next,
+.tv-set:-webkit-full-screen .up-next,
+.tv-set:fullscreen .scorecard,
+.tv-set:-webkit-full-screen .scorecard { display: none; }
+.tv-set:fullscreen .watch-screen,
+.tv-set:-webkit-full-screen .watch-screen { padding: 0.6rem; overflow: hidden; }
+.tv-set:fullscreen .player-shell .watch-stats,
+.tv-set:-webkit-full-screen .player-shell .watch-stats { padding: 0.35rem 0.8rem; }
+
+/* 8 — Footer credit. */
+.footer-credit {
+  text-align: center;
+  padding: 0 1rem 0.35rem;
+  margin: 0;
+  color: #ffd9ad;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+/* Phones: keep the bigger set usable — slim left grille, knobs stay
+   tappable, cable box shrinks but keeps its face. */
+@media (max-width: 720px) {
+  .header-inner { padding: 0.85rem 1rem; }
+  .site-title { font-size: 1.6rem; }
+  .hero { padding: 3rem 1rem 2.25rem; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero-bubbles { height: 210px; --rise-dist: 380px; }
+  .tv-cabinet { padding: 0.6rem; gap: 0.5rem; }
+  .tv-side { width: 70px; }
+  .tv-side-left { width: 22px; }
+  .tv-knob { width: 54px; height: 54px; }
+  .tv-knob-notch { width: 5px; height: 14px; top: 5px; margin-left: -2.5px; }
+  .cable-box { margin: 0 0.4rem 0; }
+  .cable-top { padding: 0.45rem 0.65rem 0.4rem; }
+  .cable-top-btn { width: 24px; height: 10px; }
+  .cable-face { padding: 0.65rem 0.65rem 0.8rem; gap: 0.6rem; }
+  .cable-led { font-size: 1.3rem; padding: 0.4rem 0.55rem; }
+  .cable-feet { margin: 0 1.4rem; }
+  .cable-foot { width: 40px; height: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-wrap, .rise-wiggle { animation: none; }
+  .flank-bubbles { display: none; }
+  .hero-bubbles {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 0 0.4rem;
+  }
+  .hero-bubbles .rise-wrap { position: static; }
+  .hero-bubbles .rise-bubble { width: 118px !important; height: 118px !important; font-size: 0.92rem !important; }
+}

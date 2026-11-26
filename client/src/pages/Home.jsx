@@ -3,6 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { api } from '../api.js';
 import VideoCard from '../components/VideoCard.jsx';
 import TvSet, { useTvSize } from '../components/TvSet.jsx';
+import { HeroBubbles } from '../components/AmbientBubbles.jsx';
+
+// Christmas is a boolean flag on each video in the data (v.christmas),
+// not a category — it gets its own sentinel filter value.
+const CHRISTMAS_CAT = '__christmas__';
 
 const VIEW_OPTIONS = [
   { key: 'grid', label: '▦ Grid' },
@@ -52,7 +57,9 @@ export default function Home() {
     if (!videos) return [];
     const q = query.trim().toLowerCase();
     return videos.filter((v) => {
-      if (activeCat && v.category !== activeCat) return false;
+      if (activeCat === CHRISTMAS_CAT) {
+        if (!v.christmas) return false;
+      } else if (activeCat && v.category !== activeCat) return false;
       if (q && !`${v.title} ${v.artist}`.toLowerCase().includes(q)) return false;
       return true;
     });
@@ -125,6 +132,16 @@ export default function Home() {
         >
           All
         </button>
+        <button
+          type="button"
+          className={`chip${activeCat === CHRISTMAS_CAT ? ' active' : ''}`}
+          onClick={() => {
+            setActiveCat(activeCat === CHRISTMAS_CAT ? '' : CHRISTMAS_CAT);
+            browse();
+          }}
+        >
+          🎄 Christmas
+        </button>
         {categories.map((c) => (
           <button
             key={c}
@@ -186,21 +203,8 @@ export default function Home() {
         <div className="hero-inner">
           <p className="hero-kicker">Music videos, annotated</p>
           <h1>Pop the bubbles. Learn the stories.</h1>
-          <p className="hero-sub">
-            Classic music videos with pop-up trivia bubbles timed to the music — recording
-            stories, chart facts, and the culture of the moment. Tap a bubble to pop it.
-          </p>
-          <div className="hero-actions">
-            <button type="button" className="btn btn-primary btn-lg" onClick={shuffle}>
-              🔀 Shuffle play
-            </button>
-            {popOfDay && (
-              <Link to={`/watch/${popOfDay.id}`} className="btn btn-ghost btn-lg">
-                🫧 Today's pick: {popOfDay.title}
-              </Link>
-            )}
-          </div>
         </div>
+        <HeroBubbles />
       </section>
 
       <div className="tv-wrap page">

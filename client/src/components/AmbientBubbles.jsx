@@ -1,107 +1,123 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
-// Ambient full-page bubble field: a fixed, viewport-wide layer BEHIND the
-// content (pointer-events: none). Bubbles drift slowly, and each one pops
-// on its own random schedule — a quick scale/ring/fade — then respawns
-// somewhere new. Positions are weighted toward the page edges so the field
-// decorates the margins instead of fighting the text.
-//
-// prefers-reduced-motion: a static, faint field — no drift, no popping.
-// Only transform/opacity animate, and the count stays modest.
+// Ambient bubbles that rise on a slow loop, wiggle as they go, and pop
+// when tapped — then respawn. The wrapper runs the rise animation; the
+// button carries the bubble face, the wiggle, and the pop. All motion is
+// CSS; under prefers-reduced-motion the stylesheet stills them (hero
+// bubbles become a static row, flank bubbles hide).
 
-const COUNT = 16;
-
-function randomBubble(id) {
-  // Edge-weighted horizontal placement: most bubbles hug the left/right
-  // margins; a few wander the middle at lower opacity.
-  const roll = Math.random();
-  let left;
-  let opacity;
-  if (roll < 0.38) {
-    left = Math.random() * 13; // left margin band
-    opacity = 0.5 + Math.random() * 0.35;
-  } else if (roll < 0.76) {
-    left = 87 + Math.random() * 11; // right margin band
-    opacity = 0.5 + Math.random() * 0.35;
-  } else {
-    left = 8 + Math.random() * 84; // anywhere, fainter
-    opacity = 0.22 + Math.random() * 0.2;
-  }
-  return {
-    id,
-    left,
-    top: Math.random() * 92,
-    size: 22 + Math.round(Math.random() * 84), // 22–106px
-    opacity,
-    duration: 9 + Math.random() * 10, // float cycle 9–19s
-    delay: -Math.random() * 12,
-    sway: 10 + Math.random() * 22,
-  };
-}
-
-function AmbientBubble({ bubble, animated, onRespawn }) {
+function RiseBubble({ className = '', style, bubbleStyle, label, children }) {
+  const [gen, setGen] = useState(0);
   const [popping, setPopping] = useState(false);
-  const timers = useRef([]);
+  const timer = useRef(null);
 
-  useEffect(() => {
-    if (!animated) return undefined;
-    // Each bubble lives 5–16s, pops, then respawns elsewhere.
-    const life = setTimeout(() => {
-      setPopping(true);
-      const swap = setTimeout(() => onRespawn(bubble.id), 380);
-      timers.current.push(swap);
-    }, 5000 + Math.random() * 11000);
-    timers.current.push(life);
-    return () => {
-      timers.current.forEach(clearTimeout);
-      timers.current = [];
-    };
-  }, [bubble.id, animated, onRespawn]);
-
-  const style = {
-    left: `${bubble.left}%`,
-    top: `${bubble.top}%`,
-    width: bubble.size,
-    height: bubble.size,
-    opacity: popping ? undefined : bubble.opacity,
-    '--sway': `${bubble.sway}px`,
-    animationDuration: `${bubble.duration}s`,
-    animationDelay: `${bubble.delay}s`,
-  };
+  function handlePop() {
+    if (popping) return;
+    setPopping(true);
+    timer.current = setTimeout(() => {
+      setPopping(false);
+      setGen((g) => g + 1); // remount: the rise starts over
+    }, 280);
+  }
 
   return (
-    <span
-      aria-hidden="true"
-      className={`ambient-bubble${popping ? ' popping' : ''}`}
-      style={style}
-    />
+    <div key={gen} className={`rise-wrap ${className}`} style={style}>
+      <button
+        type="button"
+        className={`rise-bubble${popping ? ' popping' : ''}`}
+        style={bubbleStyle}
+        onClick={handlePop}
+        aria-label={label || 'Pop the bubble'}
+      >
+        <span className="rise-wiggle">{children}</span>
+      </button>
+    </div>
   );
 }
 
-export default function AmbientBubbles() {
-  const reduced = useMemo(
-    () =>
-      typeof window !== 'undefined' &&
-      window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-    [],
-  );
-  const nextId = useRef(COUNT);
-  const [bubbles, setBubbles] = useState(() =>
-    Array.from({ length: COUNT }, (_, i) => randomBubble(i)),
-  );
+// The banner's words, floating in bubbles (v6 hero).
+const HERO_PHRASES = [
+  { text: 'Pop the bubbles.', size: 168, fontSize: '1.28rem', left: '4%', dur: 25, delay: -7, wiggle: 5 },
+  { text: 'Learn the stories.', size: 158, fontSize: '1.2rem', left: '24%', dur: 29, delay: -19, wiggle: 6 },
+  { text: 'Recording stories', size: 126, fontSize: '1rem', left: '43%', dur: 21, delay: -3, wiggle: 4.4 },
+  { text: 'Chart facts', size: 106, fontSize: '0.95rem', left: '58%', dur: 19, delay: -12, wiggle: 4 },
+  { text: 'The culture of the moment', size: 180, fontSize: '1.1rem', left: '72%', dur: 31, delay: -23, wiggle: 6.4 },
+  { text: 'Tap a bubble to pop it', size: 136, fontSize: '0.98rem', left: '36%', dur: 26, delay: -15, wiggle: 5.2 },
+];
 
-  const respawn = React.useCallback((id) => {
-    nextId.current += 1;
-    const fresh = randomBubble(nextId.current);
-    setBubbles((prev) => prev.map((b) => (b.id === id ? fresh : b)));
-  }, []);
-
+export function HeroBubbles() {
   return (
-    <div className={`ambient-bubbles${reduced ? ' reduced' : ''}`} aria-hidden="true">
-      {bubbles.map((b) => (
-        <AmbientBubble key={b.id} bubble={b} animated={!reduced} onRespawn={respawn} />
+    <div className="hero-bubbles">
+      {HERO_PHRASES.map((p) => (
+        <RiseBubble
+          key={p.text}
+          className="hero-rise"
+          label={`Pop the bubble: ${p.text}`}
+          style={{
+            left: p.left,
+            '--rise-dur': `${p.dur}s`,
+            '--rise-delay': `${p.delay}s`,
+          }}
+          bubbleStyle={{
+            width: p.size,
+            height: p.size,
+            fontSize: p.fontSize,
+            '--wig-dur': `${p.wiggle}s`,
+          }}
+        >
+          {p.text}
+        </RiseBubble>
       ))}
     </div>
+  );
+}
+
+// Plain bubbles drifting up either side of the TV (v6 flanks).
+const FLANK_LEFT = [
+  { size: 62, x: '6px', dur: 27, delay: -8, wiggle: 5 },
+  { size: 38, x: '46px', dur: 21, delay: -16, wiggle: 4 },
+  { size: 50, x: '18px', dur: 32, delay: -3, wiggle: 6 },
+  { size: 32, x: '54px', dur: 18, delay: -11, wiggle: 3.6 },
+];
+const FLANK_RIGHT = [
+  { size: 54, x: '26px', dur: 29, delay: -13, wiggle: 5.6 },
+  { size: 34, x: '52px', dur: 19, delay: -5, wiggle: 3.8 },
+  { size: 66, x: '4px', dur: 33, delay: -21, wiggle: 6.2 },
+  { size: 42, x: '44px', dur: 23, delay: -9, wiggle: 4.4 },
+];
+
+function FlankColumn({ side, items }) {
+  return (
+    <div className={`flank-bubbles flank-${side}`} aria-hidden="false">
+      {items.map((b, i) => (
+        <RiseBubble
+          key={i}
+          className="flank-rise"
+          label="Pop the bubble"
+          style={{
+            left: side === 'left' ? b.x : undefined,
+            right: side === 'right' ? b.x : undefined,
+            '--rise-dur': `${b.dur}s`,
+            '--rise-delay': `${b.delay}s`,
+          }}
+          bubbleStyle={{
+            width: b.size,
+            height: b.size,
+            '--wig-dur': `${b.wiggle}s`,
+          }}
+        >
+          {null}
+        </RiseBubble>
+      ))}
+    </div>
+  );
+}
+
+export function FlankBubbles() {
+  return (
+    <>
+      <FlankColumn side="left" items={FLANK_LEFT} />
+      <FlankColumn side="right" items={FLANK_RIGHT} />
+    </>
   );
 }

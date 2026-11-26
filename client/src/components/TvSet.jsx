@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { FlankBubbles } from './AmbientBubbles.jsx';
 
 // Shared size logic for the TV set: normal -> theater (the whole set grows
 // to near-full viewport) -> true fullscreen (the whole TV element, cabinet
@@ -50,10 +51,12 @@ export function useTvSize(tvRef) {
   return { mode, setMode, cycle, canFullscreen };
 }
 
-// The vintage TV: a cable box on top (LED readout + whatever controls the
-// page hands us), a wood-grain cabinet, a curved screen with its own
-// internal scroll, and two working knobs — top is Shuffle Play, bottom
-// cycles the set's size. Everything is drawn in CSS; no images.
+// The vintage TV: a Jerrold-style cable box standing on little feet on top
+// (wood top, big red LED readout + whatever controls the page hands us), a
+// wood-grain cabinet with speaker grilles on both sides of a curved screen
+// with its own internal scroll, and two working knobs — top is Shuffle
+// Play, bottom cycles the set's size. Ambient bubbles drift up both sides
+// of the set. Everything is drawn in CSS; no images.
 export default function TvSet({
   tvRef,
   mode,
@@ -83,13 +86,35 @@ export default function TvSet({
       )}
       <div className="tv-assembly">
         <div className="cable-box">
-          <div className="cable-led" aria-hidden="true">
-            <span>{ledText}</span>
+          <div className="cable-top" aria-hidden="true">
+            <div className="cable-top-btns">
+              <span className="cable-top-btn" />
+              <span className="cable-top-btn" />
+              <span className="cable-top-btn" />
+              <span className="cable-top-btn" />
+              <span className="cable-top-btn" />
+              <span className="cable-top-btn" />
+            </div>
+            <span className="cable-top-brand">BubbleVision</span>
           </div>
-          <div className="cable-controls">{cableControls}</div>
+          <div className="cable-face">
+            <div className="cable-led" aria-hidden="true">
+              <span>{ledText}</span>
+            </div>
+            <div className="cable-controls">{cableControls}</div>
+          </div>
+        </div>
+        <div className="cable-feet" aria-hidden="true">
+          <span className="cable-foot" />
+          <span className="cable-foot" />
+          <span className="cable-foot" />
         </div>
 
         <div className="tv-cabinet">
+          <div className="tv-side tv-side-left" aria-hidden="true">
+            <div className="tv-speaker" />
+          </div>
+
           <div className="tv-bezel">
             <div className="tv-screen">
               <div className={`tv-screen-scroll${scrollClassName ? ` ${scrollClassName}` : ''}`}>
@@ -138,6 +163,7 @@ export default function TvSet({
           </div>
         </div>
       </div>
+      <FlankBubbles />
     </div>
   );
 }

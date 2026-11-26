@@ -317,7 +317,7 @@ function WatchInner({ id }) {
             </section>
           )}
 
-          {video.description && <p className="muted">{video.description}</p>}
+          {video.description && <p className="muted watch-desc">{video.description}</p>}
 
               {upNext.length > 0 && (
                 <section className="up-next">
