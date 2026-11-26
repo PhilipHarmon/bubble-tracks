@@ -39,9 +39,6 @@ export default function Header() {
           <NavLink to="/" end onClick={() => setOpen(false)}>
             Home
           </NavLink>
-          <NavLink to="/christmas" onClick={() => setOpen(false)}>
-            🎄 Christmas
-          </NavLink>
           <button type="button" className="nav-link-btn" onClick={shuffle}>
             🔀 Shuffle
           </button>

@@ -1,32 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
-import { api, thumbnail, tvApi } from '../api.js';
+import { api, thumbnail } from '../api.js';
 import { useQueue } from '../queue.jsx';
 import YouTubePlayer from '../components/YouTubePlayer.jsx';
 import BubbleLayer from '../components/BubbleLayer.jsx';
 import VideoCard from '../components/VideoCard.jsx';
-import TvShareModal from '../components/TvShareModal.jsx';
+import TvSet, { useTvSize } from '../components/TvSet.jsx';
 
 const AUTOPLAY_NEXT_SECONDS = 8;
-
-// The TV room survives moving between videos (queue/shuffle/auto-advance)
-// because the host session, not the video, owns it.
-const TV_KEY = 'bt_tv_room';
-function loadTvRoom() {
-  try {
-    return JSON.parse(sessionStorage.getItem(TV_KEY) || 'null');
-  } catch {
-    return null;
-  }
-}
-function saveTvRoom(room) {
-  try {
-    if (room) sessionStorage.setItem(TV_KEY, JSON.stringify(room));
-    else sessionStorage.removeItem(TV_KEY);
-  } catch {
-    /* ignore */
-  }
-}
 
 export default function Watch() {
   const { id } = useParams();
@@ -46,9 +27,17 @@ function WatchInner({ id }) {
   const [countdown, setCountdown] = useState(null);
 
   const playerRef = useRef(null);
-  const shellRef = useRef(null);
-  const [expandMode, setExpandMode] = useState('normal'); // 'normal' | 'theater' | 'full'
-  const canFullscreen = typeof document !== 'undefined' && !!document.fullscreenEnabled;
+  const tvRef = useRef(null);
+  // The TV set's size control: normal -> theater -> fullscreen (whole TV,
+  // cabinet included). Same cycle the old player-shell Expand button ran.
+  const {
+    mode: expandMode,
+    setMode: setExpandMode,
+    cycle: cycleExpand,
+    canFullscreen,
+  } = useTvSize(tvRef);
+  const [channel, setChannel] = useState(null);
+  const [burst, setBurst] = useState(true);
   const shownRef = useRef(new Set());
   const lastTimeRef = useRef(0);
   const advanceTimer = useRef(null);
@@ -56,28 +45,6 @@ function WatchInner({ id }) {
   const location = useLocation();
   const { queue, dequeue } = useQueue();
   const shuffleMode = !!(location.state && location.state.shuffle);
-
-  // --- TV share (host) ------------------------------------------------------
-  const [tvRoom, setTvRoom] = useState(loadTvRoom);
-  const [tvModal, setTvModal] = useState(false);
-  const [tvBusy, setTvBusy] = useState(false);
-  const [tvError, setTvError] = useState(false);
-  const tvRef = useRef(null);
-  tvRef.current = tvRoom;
-  const lastTvPublishRef = useRef(0);
-
-  const publishTv = useCallback(
-    (patch) => {
-      const room = tvRef.current;
-      if (!room || !video) return;
-      tvApi
-        .update(room.code, room.hostToken, { video: video.id, ...patch })
-        .catch(() => {
-          /* a missed publish self-heals on the next tick */
-        });
-    },
-    [video],
-  );
 
   // Load video + up-next suggestions.
   useEffect(() => {
@@ -90,21 +57,10 @@ function WatchInner({ id }) {
       .then((v) => {
         if (cancelled) return;
         setVideo(v);
-        // If a TV share is live, the new video takes over the room
-        // (queue picks, shuffle and auto-advance all flow through here).
-        const room = tvRef.current;
-        if (room) {
-          tvApi
-            .update(room.code, room.hostToken, {
-              video: v.id,
-              status: 'playing',
-              currentTime: 0,
-              duration: 0,
-            })
-            .catch(() => {});
-        }
         api.videos().then((all) => {
           if (cancelled) return;
+          const idx = all.findIndex((x) => x.id === v.id);
+          setChannel(idx >= 0 ? idx + 1 : null);
           const others = all.filter((x) => x.id !== v.id);
           const sameCat = others.filter((x) => x.category && x.category === v.category);
           const rest = others.filter((x) => !x.category || x.category !== v.category);
@@ -128,42 +84,25 @@ function WatchInner({ id }) {
     }));
   }, [video, duration]);
 
-  // Expand control: normal -> theater (big CSS view) -> true fullscreen
-  // (whole player shell, bubbles and counters included) -> back.
-  const cycleExpand = useCallback(() => {
-    if (expandMode === 'normal') {
-      setExpandMode('theater');
-    } else if (expandMode === 'theater') {
-      if (canFullscreen && shellRef.current && shellRef.current.requestFullscreen) {
-        const p = shellRef.current.requestFullscreen();
-        if (p && typeof p.catch === 'function') p.catch(() => setExpandMode('theater'));
-      } else {
-        setExpandMode('normal');
-      }
-    } else if (document.fullscreenElement) {
-      document.exitFullscreen().catch(() => {});
-    } else {
-      setExpandMode('theater');
-    }
-  }, [expandMode, canFullscreen]);
-
-  // Keep state in sync when the user exits fullscreen with Esc.
+  // Channel-change static burst: WatchInner remounts per video, so this
+  // fires every time a new video tunes in.
   useEffect(() => {
-    const onFsChange = () => {
-      setExpandMode(document.fullscreenElement ? 'full' : 'theater');
-    };
-    document.addEventListener('fullscreenchange', onFsChange);
-    return () => document.removeEventListener('fullscreenchange', onFsChange);
+    const t = setTimeout(() => setBurst(false), 350);
+    return () => clearTimeout(t);
   }, []);
 
-  // Esc exits theater mode.
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === 'Escape') setExpandMode('normal');
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, []);
+  // Top TV knob: shuffle to another video.
+  function knobShuffle() {
+    api
+      .videos()
+      .then((all) => {
+        const pool = all.filter((x) => x.id !== id);
+        if (!pool.length) return;
+        const pick = pool[Math.floor(Math.random() * pool.length)];
+        navigate(`/watch/${pick.id}`, { state: { shuffle: true } });
+      })
+      .catch(() => {});
+  }
 
   const expandLabel =
     expandMode === 'full' ? '⛶ Exit' : expandMode === 'theater' ? (canFullscreen ? '⛶ Full screen' : '⛶ Smaller') : '⛶ Expand';
@@ -233,37 +172,6 @@ function WatchInner({ id }) {
             if (due.length) setVisible((prev) => [...prev, ...due].slice(-3));
           }
           lastTimeRef.current = t;
-          // TV share: throttled position publish (~every 2s) from the
-          // same RAF tick — no extra timers.
-          const room = tvRef.current;
-          if (room && video) {
-            const now = Date.now();
-            if (now - lastTvPublishRef.current > 2000) {
-              lastTvPublishRef.current = now;
-              let status;
-              try {
-                const st = player.getPlayerState ? player.getPlayerState() : -1;
-                if (st === 1) status = 'playing';
-                else if (st === 2) status = 'paused';
-              } catch {
-                /* ignore */
-              }
-              let dur = 0;
-              try {
-                dur = player.getDuration ? player.getDuration() || 0 : 0;
-              } catch {
-                /* ignore */
-              }
-              tvApi
-                .update(room.code, room.hostToken, {
-                  video: video.id,
-                  currentTime: t,
-                  duration: dur,
-                  ...(status ? { status } : {}),
-                })
-                .catch(() => {});
-            }
-          }
         }
       } catch {
         /* player not ready */
@@ -272,7 +180,7 @@ function WatchInner({ id }) {
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [pops, video]);
+  }, [pops]);
 
   // Countdown display ticker.
   useEffect(() => {
@@ -302,70 +210,45 @@ function WatchInner({ id }) {
     if (e && (e.data === 101 || e.data === 150)) setEmbedBlocked(true);
   }
 
-  async function openTv() {
-    setTvError(false);
-    setTvModal(true);
-    if (tvRef.current) return;
-    setTvBusy(true);
-    try {
-      const room = await tvApi.create(video ? video.id : null);
-      const stored = { code: room.code, hostToken: room.hostToken };
-      saveTvRoom(stored);
-      setTvRoom(stored);
-    } catch {
-      setTvError(true);
-    } finally {
-      setTvBusy(false);
-    }
-  }
-
-  async function endTv() {
-    const room = tvRef.current;
-    if (room) {
-      try {
-        await tvApi.end(room.code, room.hostToken);
-      } catch {
-        /* room may already be gone — ending locally either way */
-      }
-    }
-    saveTvRoom(null);
-    setTvRoom(null);
-    setTvModal(false);
-  }
-
   const total = pops.length;
   const poppedCount = poppedFacts.length;
 
+  const sizeLabel =
+    expandMode === 'full' ? 'Full screen' : expandMode === 'theater' ? 'Theater' : 'Normal';
+
   return (
-    <div className="narrow page">
+    <div className="tv-wrap page">
       <Link to="/" className="back-link">← All videos</Link>
-      {error && <p className="alert alert-error">{error}</p>}
-      {!video && !error && <p className="muted">Loading…</p>}
+      <TvSet
+        tvRef={tvRef}
+        mode={expandMode}
+        onCycleSize={cycleExpand}
+        sizeLabel={sizeLabel}
+        onShuffle={knobShuffle}
+        ledText={channel ? `CH ${String(channel).padStart(3, '0')}` : 'CH ---'}
+        cableControls={
+          <span className="cable-now">
+            {video ? `Now playing: ${video.title} — ${video.artist}` : 'Tuning in…'}
+          </span>
+        }
+        onExitTheater={() => setExpandMode('normal')}
+        scrollClassName="watch-scroll"
+        screenOverlay={burst ? <div className="tv-static-burst" aria-hidden="true" /> : null}
+      >
+        <div className="watch-screen">
+          {error && <p className="alert alert-error">{error}</p>}
+          {!video && !error && <p className="muted">Loading…</p>}
 
-      {video && (
-        <>
-          <h1 className="watch-title">{video.title}</h1>
-          <p className="muted watch-sub">
-            {video.artist}
-            {video.year ? ` · ${video.year}` : ''}
-            {video.category ? ` · ${video.category}` : ''}
-          </p>
+          {video && (
+            <>
+              <h1 className="watch-title">{video.title}</h1>
+              <p className="muted watch-sub">
+                {video.artist}
+                {video.year ? ` · ${video.year}` : ''}
+                {video.category ? ` · ${video.category}` : ''}
+              </p>
 
-          <div className="watch-actions">
-            <button type="button" className="btn btn-ghost btn-sm" onClick={openTv}>
-              📺 Show on TV
-            </button>
-            {tvRoom && (
-              <button type="button" className="tv-live-pill" onClick={() => setTvModal(true)}>
-                📺 On TV: {tvRoom.code} — tap to manage
-              </button>
-            )}
-          </div>
-
-          {expandMode === 'theater' && (
-            <div className="theater-backdrop" onClick={() => setExpandMode('normal')} aria-hidden="true" />
-          )}
-          <div ref={shellRef} className={`player-shell${expandMode === 'theater' ? ' theater' : ''}`}>
+              <div className="player-shell">
             {embedBlocked ? (
               <div className="embed-blocked">
                 <img src={thumbnail(video.youtubeId)} alt="" />
@@ -392,17 +275,7 @@ function WatchInner({ id }) {
                     }
                   }}
                   onStateChange={(e) => {
-                    if (!window.YT) return;
-                    if (e.data === window.YT.PlayerState.ENDED) {
-                      // Keep the room 'paused' at the end frame rather than
-                      // 'ended' — auto-advance publishes the next video next.
-                      publishTv({ status: 'paused' });
-                      handleEnded();
-                    } else if (e.data === window.YT.PlayerState.PLAYING) {
-                      publishTv({ status: 'playing' });
-                    } else if (e.data === window.YT.PlayerState.PAUSED) {
-                      publishTv({ status: 'paused' });
-                    }
+                    if (window.YT && e.data === window.YT.PlayerState.ENDED) handleEnded();
                   }}
                   onError={handlePlayerError}
                 />
@@ -446,29 +319,20 @@ function WatchInner({ id }) {
 
           {video.description && <p className="muted">{video.description}</p>}
 
-          {upNext.length > 0 && (
-            <section className="up-next">
-              <h2>Up next</h2>
-              <div className="video-grid">
-                {upNext.map((v) => (
-                  <VideoCard key={v.id} video={v} />
-                ))}
-              </div>
-            </section>
+              {upNext.length > 0 && (
+                <section className="up-next">
+                  <h2>Up next</h2>
+                  <div className="video-grid">
+                    {upNext.map((v) => (
+                      <VideoCard key={v.id} video={v} />
+                    ))}
+                  </div>
+                </section>
+              )}
+            </>
           )}
-
-          {tvModal && (
-            <TvShareModal
-              room={tvRoom}
-              url={tvRoom ? `${window.location.origin}/?tv=${tvRoom.code}` : ''}
-              error={tvError}
-              busy={tvBusy}
-              onClose={() => setTvModal(false)}
-              onEnd={endTv}
-            />
-          )}
-        </>
-      )}
+        </div>
+      </TvSet>
     </div>
   );
 }
